@@ -1,17 +1,14 @@
-package com.example.examplemod;
-
+package com.gameforg;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
-
-@Mod(modid = ExampleMod.MODID, name = ExampleMod.NAME, version = ExampleMod.VERSION)
-public class ExampleMod
-{
-    public static final String MODID = "examplemod";
-    public static final String NAME = "Example Mod";
+@Mod(modid = gameforge.MODID, name = gameforge.NAME, version = gameforge.VERSION)
+public class gameforge {
+    public static final String MODID = "gameforge";
+    public static final String NAME = "NOGood";
     public static final String VERSION = "1.0";
 
     private static Logger logger;

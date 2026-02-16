@@ -1,5 +1,6 @@
 package items;
 
+import common.GG_CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.creativetab.CreativeTabs;
 
@@ -11,6 +12,6 @@ public class RegistryEventItem extends Item {
         this.setMaxStackSize(number);
     }
     public  RegistryEventItem(String outName, String RegistryName){
-        this(outName,RegistryName,CreativeTabs.MATERIALS,64);
+        this(outName,RegistryName, GG_CreativeTabs.GG_1,64);
     }
 }
