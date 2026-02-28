@@ -69,10 +69,9 @@ public class TCcs extends AbstractTrait {
 
                 data.killcount += 1;
                 //击杀计数加一
-                if (health>500)health=500;
-
                 data.health = health;
                 //记录击杀目标的最大生命值
+                if (health>500)health=500;
 
                 float divisor = 25000f;
                 //定义了一个float类型的变量divisor，并将其赋值为25000f，用作后续的数值计算。
