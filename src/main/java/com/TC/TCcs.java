@@ -21,7 +21,7 @@ import java.util.Optional;
 @Mod.EventBusSubscriber(modid = MaaaMod.MODID)
 public class TCcs extends AbstractTrait {
     public TCcs(){
-        super("trait_corpse_mountain",0xff0000);
+        super("trait_wat_can_i_see",Integer.parseInt("7AFF83", 16));
         //第一个参数是特性的注册名，即"trait_corpse_mountain"（注意，注册名不能有大写字母），通过魔法匠魂的配置文件调用注册名就可以将词条附加到你想要的材料上
         //当然具体请看相关教程
         //第二个参数是特性的颜色，即红色(0xff0000)
@@ -73,10 +73,9 @@ public class TCcs extends AbstractTrait {
                 //记录击杀目标的最大生命值
                 if (health>500)health=500;
 
-                float divisor = 25000f;
                 //定义了一个float类型的变量divisor，并将其赋值为25000f，用作后续的数值计算。
 
-                float bonus = Math.round(random.nextFloat() * health * 100) / divisor;
+                float bonus = health / 500;
                 //随机生成一个浮点数，范围为0到1，乘以实体的最大生命值并乘以100，得到一个值。
                 //将上一步得到的值除以divisor，得到bonus的值，并四舍五入到最近的整数。
                 //       定义了一个浮点型变量bonus，并通过一系列计算得出击杀目标后提升的伤害
