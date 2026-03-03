@@ -1,4 +1,4 @@
-package com.TC;
+package com.maaamod.TC;
 
 import slimeknights.tconstruct.library.materials.Material;
 

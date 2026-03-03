@@ -1,6 +1,6 @@
-package com.items;
+package com.maaamod.items;
 
-import com.GG_CreativeTabs;
+import com.maaamod.GG_CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.creativetab.CreativeTabs;
 

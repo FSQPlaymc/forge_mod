@@ -1,7 +1,6 @@
-package com;
+package com.maaamod;
 
-import com.MaaaMod.MaaaMod;
-import com.items.GG_Items;
+import com.maaamod.items.GG_Items;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -14,7 +13,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod.EventBusSubscriber(modid = MaaaMod.MODID)
+@Mod.EventBusSubscriber(modid = maaamod.MODID)
 
 public class GG_CreativeTabs {
     public static final CreativeTabs GG_1=new CreativeTabs(CreativeTabs.getNextID(),"fsqwmc_1") {

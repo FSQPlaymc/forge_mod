@@ -1,13 +1,11 @@
-package com.TC;
+package com.maaamod.TC;
 
-import com.MaaaMod.MaaaMod;
+import com.maaamod.maaamod;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -16,9 +14,7 @@ import slimeknights.tconstruct.library.traits.AbstractTrait;
 import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.library.utils.TinkerUtil;
 
-import java.util.Optional;
-
-@Mod.EventBusSubscriber(modid = MaaaMod.MODID)
+@Mod.EventBusSubscriber(modid = maaamod.MODID)
 public class TCcs extends AbstractTrait {
     public TCcs(){
         super("trait_wat_can_i_see",Integer.parseInt("7AFF83", 16));

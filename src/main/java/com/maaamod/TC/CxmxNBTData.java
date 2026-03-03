@@ -1,4 +1,4 @@
-package com.TC;
+package com.maaamod.TC;
 
 import net.minecraft.nbt.NBTTagCompound;
 

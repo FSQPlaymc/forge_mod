@@ -1,8 +1,8 @@
-package com.MaaaMod;
+package com.maaamod;
 
-import com.TC.TC2;
-import com.TC.TCcs;
-import com.items.GG_Items;
+import com.maaamod.TC.TC2;
+import com.maaamod.TC.TCcs;
+import com.maaamod.items.GG_Items;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -14,14 +14,14 @@ import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.materials.*;
 
 @Mod(
-        modid = MaaaMod.MODID, name = MaaaMod.NAME, version = MaaaMod.VERSION,
+        modid = maaamod.MODID, name = maaamod.NAME, version = maaamod.VERSION,
         dependencies="required-after:tconstruct"
 )
-public class MaaaMod
+public class maaamod
 {
     public static Material TCa;
 
-    public static final String MODID = "assets/maaamod";
+    public static final String MODID = "maaamod";
     public static final String NAME = "Exa Mod";
     public static final String VERSION = "1.0";
 
