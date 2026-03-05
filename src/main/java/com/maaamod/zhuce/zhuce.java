@@ -1,12 +1,12 @@
 package com.maaamod.zhuce;
 
-import com.maaamod.maaamod;
+import com.maaamod.Maaamod;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
-import static com.maaamod.maaamod.getLogger;
-@Mod.EventBusSubscriber(modid = maaamod.MODID)
+import static com.maaamod.Maaamod.getLogger;
+@Mod.EventBusSubscriber(modid = Maaamod.MODID)
 public class zhuce  {
     private static Logger logger=getLogger();
 

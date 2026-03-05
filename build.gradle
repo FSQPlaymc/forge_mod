@@ -28,7 +28,7 @@ apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
 version = '1.0'
-group = 'com.maaamod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'com.maaamod.maaamod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'maaamod'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
@@ -102,7 +102,7 @@ dependencies {
 
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    //duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     manifest {
         attributes([
             "Specification-Title": "maaamod",
@@ -135,4 +135,4 @@ publishing {
     }
 }
 
-sourceSets {main {  output.resourcesDir=output.classesDir}}//资源问题
+//sourceSets {main {  output.resourcesDir=output.classesDir}}//资源问题

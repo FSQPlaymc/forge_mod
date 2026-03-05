@@ -1,6 +1,6 @@
 package com.maaamod.TC;
 
-import com.maaamod.maaamod;
+import com.maaamod.Maaamod;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -14,7 +14,7 @@ import slimeknights.tconstruct.library.traits.AbstractTrait;
 import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.library.utils.TinkerUtil;
 
-@Mod.EventBusSubscriber(modid = maaamod.MODID)
+@Mod.EventBusSubscriber(modid = Maaamod.MODID)
 public class TCcs extends AbstractTrait {
     public TCcs(){
         super("trait_wat_can_i_see",Integer.parseInt("7AFF83", 16));

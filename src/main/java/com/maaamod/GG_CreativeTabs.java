@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod.EventBusSubscriber(modid = maaamod.MODID)
+@Mod.EventBusSubscriber(modid = Maaamod.MODID)
 
 public class GG_CreativeTabs {
     public static final CreativeTabs GG_1=new CreativeTabs(CreativeTabs.getNextID(),"fsqwmc_1") {

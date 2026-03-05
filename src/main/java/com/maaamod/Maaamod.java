@@ -12,12 +12,17 @@ import org.apache.logging.log4j.Logger;
 import slimeknights.tconstruct.library.MaterialIntegration;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.materials.*;
-
+/*
+方案二：手动删除残留文件
+如果你不想重新编译整个项目，可以直接去操作系统的文件管理器里，手动删除那个残留的 .class 文件。它的路径通常在：
+build/classes/java/main/com/maaamod/
+找到对应的文件删掉即可。
+ */
 @Mod(
-        modid = maaamod.MODID, name = maaamod.NAME, version = maaamod.VERSION,
+        modid = Maaamod.MODID, name = Maaamod.NAME, version = Maaamod.VERSION,
         dependencies="required-after:tconstruct"
 )
-public class maaamod
+public class Maaamod
 {
     public static Material TCa;
 
