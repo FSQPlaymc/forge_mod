@@ -2,6 +2,7 @@ package com.maaamod;
 
 import com.maaamod.TC.TC2;
 import com.maaamod.TC.TCcs;
+import com.maaamod.TC.TMaterials_set;
 import com.maaamod.items.GG_Items;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
@@ -54,6 +55,8 @@ public class Maaamod
         //TraitCorpseMountain()可以换成其他你任意想要注册词条的构建方法，如果构建方法存在参数，那你还需要填上参数
         TinkerRegistry.addMaterial(TCa);
         TinkerRegistry.integrate(integration);
+        new TMaterials_set();
+        new TMaterials_set().addMaterials();
         //TinkerRegistry.addTrait(new TCcs());
         // 1. 创建材料实例
         // 参数说明：材料名称(唯一标识符)，颜色(十六进制)

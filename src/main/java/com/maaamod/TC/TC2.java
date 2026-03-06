@@ -25,9 +25,12 @@ public class TC2 extends AbstractTrait {
     //       该方法的作用是根据玩家使用的工具和攻击目标的不同，计算并返回修改后的伤害值。
     //       补充，你这个类所继承AbstractTrait抽象类还有很多方法用来修改匠魂工具不同行为的效果，想要查看这些方法可以使用Ctrl点击damage这个方法名跳转查看
     {
+        //super.damage( tool,  player,  target,  damage,  newDamage,  isCritical);
         // 2. 创建要发送的聊天消息组件
         String messageContent = "你右键点击了一个方块！"+ String.valueOf(newDamage + 100);
         TextComponentString chatComponent = new TextComponentString(messageContent);
+        // 打印堆栈跟踪
+        new Throwable().printStackTrace();
 
         // 3. 通过玩家的 sendMessage 方法发送
         player.sendMessage(chatComponent);
