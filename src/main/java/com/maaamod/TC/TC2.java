@@ -14,6 +14,7 @@ public class TC2 extends AbstractTrait {
         super(identifier, color);
     }
     @Override//覆盖方法
+
     public float damage(ItemStack tool, EntityLivingBase player, EntityLivingBase target, float damage, float newDamage, boolean isCritical)
     //该方法的名称是 damage，返回一个 float 类型的值。该方法有 6 个参数：
     //tool：一个 ItemStack 类型的参数，表示正在使用的工具。
