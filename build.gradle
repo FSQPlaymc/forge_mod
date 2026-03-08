@@ -9,6 +9,12 @@ buildscript {
         classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
     }
 }
+configurations.all {
+    resolutionStrategy {
+        // 完全信任本地缓存，不检查动态版本更新
+        cacheDynamicVersionsFor 24, 'hours'  // 或更长时间
+    }
+}
 
 
 repositories{

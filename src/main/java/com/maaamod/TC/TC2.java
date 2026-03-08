@@ -30,7 +30,7 @@ public class TC2 extends AbstractTrait {
         String messageContent = "你右键点击了一个方块！"+ String.valueOf(newDamage + 100);
         TextComponentString chatComponent = new TextComponentString(messageContent);
         // 打印堆栈跟踪
-        new Throwable().printStackTrace();
+        //new Throwable().printStackTrace();
 
         // 3. 通过玩家的 sendMessage 方法发送
         player.sendMessage(chatComponent);
