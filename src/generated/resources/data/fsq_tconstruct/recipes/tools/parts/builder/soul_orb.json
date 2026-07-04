@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:part_builder",
+  "cost": 1,
+  "pattern": "fsq_tconstruct:soul_orb",
+  "pattern_item": [
+    {
+      "tag": "tconstruct:patterns/default"
+    },
+    {
+      "item": "fsq_tconstruct:cross/soul_orb_cast"
+    }
+  ],
+  "result": {
+    "item": "fsq_tconstruct:soul_orb"
+  }
+}

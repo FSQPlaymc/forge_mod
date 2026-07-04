@@ -1,0 +1,10 @@
+{
+  "type": "fsq_tconstruct:custom_melter",
+  "inputs": [
+    { "ingredient": { "item": "minecraft:amethyst_shard" }, "count": 1 },
+    {"ingredient": { "item": "minecraft:diamond" }, "count": 1}
+  ],
+  "output": { "item": "fsq_tconstruct:amethyst_diamond", "count": 1 },
+  "temperature": 800,
+  "time": 900
+}

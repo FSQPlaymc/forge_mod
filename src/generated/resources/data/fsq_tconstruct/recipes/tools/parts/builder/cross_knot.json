@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:part_builder",
+  "cost": 1,
+  "pattern": "fsq_tconstruct:cross_knot",
+  "pattern_item": [
+    {
+      "tag": "tconstruct:patterns/default"
+    },
+    {
+      "item": "fsq_tconstruct:cross_knot_cast"
+    }
+  ],
+  "result": {
+    "item": "fsq_tconstruct:cross_knot"
+  }
+}

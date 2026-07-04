@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:table_casting_material",
+  "cast": {
+    "tag": "fsq_tconstruct:casts/single_use/cross_knot"
+  },
+  "cast_consumed": true,
+  "item_cost": 1,
+  "result": "fsq_tconstruct:cross_knot"
+}

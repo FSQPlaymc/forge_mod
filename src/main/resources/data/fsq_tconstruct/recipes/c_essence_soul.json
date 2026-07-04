@@ -1,0 +1,11 @@
+{
+  "type": "fsq_tconstruct:custom_melter",
+  "inputs": [
+    { "ingredient": { "item": "minecraft:amethyst_shard" }, "count": 1 },
+    { "ingredient": { "item": "tconstruct:liquid_soul_bucket" }, "count": 1 },
+    { "ingredient": { "item": "fsq_tconstruct:corpse_fat" }, "count": 9 }
+  ],
+  "output": { "item": "fsq_tconstruct:essence_soul", "count": 1 },
+  "temperature": 600,
+  "time": 60
+}

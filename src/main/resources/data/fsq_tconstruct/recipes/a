@@ -1,0 +1,10 @@
+{
+  "type": "fsq_tconstruct:custom_melter",
+  "inputs": [
+    { "ingredient": { "item": "minecraft:iron_ingot" }, "count": 2 },
+    { "ingredient": { "tag": "forge:ingots/copper" }, "count": 1 }
+  ],
+  "output": { "item": "minecraft:stone", "count": 1 },
+  "temperature": 150,
+  "time": 100
+}

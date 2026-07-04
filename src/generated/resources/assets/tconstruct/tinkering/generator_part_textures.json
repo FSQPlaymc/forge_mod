@@ -1,0 +1,85 @@
+{
+  "parts": [
+    {
+      "path": "fsq_tconstruct:item/tool/parts/f_cross_knot/cross_knot",
+      "stat_type": "tconstruct:binding"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/parts/f_soul_orb/soul_orb",
+      "stat_type": "tconstruct:soul_orb"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/smallblade",
+      "stat_type": "tconstruct:head"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/smallblade_broken",
+      "stat_type": "tconstruct:head"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/largeplate",
+      "stat_type": "tconstruct:head"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/soul_orb",
+      "stat_type": "tconstruct:soul_orb"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/toolhandle",
+      "stat_type": "tconstruct:handle"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/toughbinding",
+      "stat_type": "tconstruct:binding"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/large/smallblade",
+      "stat_type": "tconstruct:head"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/large/smallblade_broken",
+      "stat_type": "tconstruct:head"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/large/largeplate",
+      "stat_type": "tconstruct:head"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/large/soul_orb",
+      "stat_type": "tconstruct:soul_orb"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/large/toolhandle",
+      "stat_type": "tconstruct:handle"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/soul_spear/large/toughbinding",
+      "stat_type": "tconstruct:binding"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/western_sword/blade1",
+      "stat_type": "tconstruct:head"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/western_sword/blade1_broken",
+      "stat_type": "tconstruct:head"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/western_sword/blade2",
+      "stat_type": "tconstruct:head"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/western_sword/toolhandle",
+      "stat_type": "tconstruct:handle"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/western_sword/knot1",
+      "stat_type": "tconstruct:binding"
+    },
+    {
+      "path": "fsq_tconstruct:item/tool/western_sword/knot2",
+      "stat_type": "tconstruct:binding"
+    }
+  ],
+  "replace": false
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:molding_table",
+  "material": {
+    "tag": "tconstruct:casts/sand"
+  },
+  "pattern": {
+    "type": "tconstruct:material",
+    "item": "fsq_tconstruct:soul_orb"
+  },
+  "result": "fsq_tconstruct:cross/soul_orb_sand_cast"
+}

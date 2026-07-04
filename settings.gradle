@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            name = 'MinecraftForge'
+            url = 'https://maven.minecraftforge.net/'
+        }
+        maven { url = 'https://maven.parchmentmc.org' } // Add this line
+        mavenLocal()
+        maven { // SlimeKnights and JEI
+            name 'DVS1 Maven FS'
+            url 'https://dvs1.progwml6.com/files/maven'
+        }
+        maven {//forge
+            url "https://cursemaven.com"
+        }
+    }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
+}

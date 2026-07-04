@@ -1,0 +1,9 @@
+{
+  "type": "fsq_tconstruct:custom_melter",
+  "inputs": [
+    { "ingredient": { "item": "minecraft:rotten_flesh" }, "count": 4 }
+  ],
+  "output": { "item": "fsq_tconstruct:essence_soul", "count": 1 },
+  "temperature": 600,
+  "time": 60
+}

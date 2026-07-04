@@ -1,0 +1,68 @@
+{
+  "modules": [
+    {
+      "type": "tconstruct:part_stats",
+      "parts": [
+        "tconstruct:small_blade",
+        {
+          "item": "tconstruct:large_plate",
+          "scale": 0.5
+        },
+        "fsq_tconstruct:soul_orb",
+        "tconstruct:tool_handle",
+        "tconstruct:tough_binding"
+      ],
+      "primary_part": 0
+    },
+    {
+      "type": "tconstruct:base_stats",
+      "stats": {
+        "tconstruct:attack_damage": 5.0,
+        "tconstruct:attack_speed": 1.6,
+        "tconstruct:block_amount": 10.0
+      }
+    },
+    {
+      "type": "tconstruct:multiply_stats",
+      "multipliers": {
+        "tconstruct:durability": 1.5,
+        "tconstruct:mining_speed": 1.5
+      }
+    },
+    {
+      "type": "tconstruct:modifier_slots",
+      "slots": {
+        "abilities": 1,
+        "upgrades": 2
+      }
+    },
+    {
+      "type": "tconstruct:sweep_melee",
+      "range": 2.0
+    },
+    {
+      "type": "tconstruct:traits",
+      "traits": [
+        {
+          "level": 1,
+          "name": "fsq_tconstruct:targeted_attack"
+        }
+      ]
+    },
+    {
+      "type": "tconstruct:tool_actions",
+      "tool_actions": [
+        "sword_dig"
+      ]
+    },
+    {
+      "type": "tconstruct:is_effective",
+      "predicate_type": "mantle:tag",
+      "tag": "forge:mineable/sword"
+    },
+    {
+      "type": "tconstruct:fixed_material_name",
+      "index": 0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "amount": 90,
+    "fluid": "fsq_tconstruct:molten_amethyst_diamond"
+  },
+  "output": "fsq_tconstruct:amethyst_diamond",
+  "temperature": 950
+}

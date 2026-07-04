@@ -1,0 +1,18 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "head1":    "fsq_tconstruct:item/tool/western_sword/blade1",
+    "head2":    "fsq_tconstruct:item/tool/western_sword/blade2",
+    "handle":   "fsq_tconstruct:item/tool/western_sword/toolhandle",
+    "binding1": "fsq_tconstruct:item/tool/western_sword/knot1",
+    "binding2": "fsq_tconstruct:item/tool/western_sword/knot2"
+  },
+  "parts": [
+    { "name": "handle",   "index": 2 },
+    { "name": "binding1", "index": 3 },
+    { "name": "binding2", "index": 4 },
+    { "name": "head2",    "index": 1 },
+    { "name": "head1",    "index": 0 }
+  ]
+}

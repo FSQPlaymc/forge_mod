@@ -1,0 +1,20 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "fsq_tconstruct:crystal_oscillator"
+    }
+  ],
+  "perStat": {
+    "tconstruct:melee_harvest": [
+      {
+        "level": 1,
+        "name": "fsq_tconstruct:crystal_oscillator"
+      },
+      {
+        "level": 1,
+        "name": "fsq_tconstruct:crystal_thorn"
+      }
+    ]
+  }
+}

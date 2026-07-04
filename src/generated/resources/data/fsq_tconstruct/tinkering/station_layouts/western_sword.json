@@ -1,0 +1,55 @@
+{
+  "icon": {
+    "item": "fsq_tconstruct:western_sword",
+    "nbt": "{Damage:0,tic_broken:0b,tic_display:1b,tic_materials:[\"tconstruct:ui_render#head\",\"tconstruct:ui_render#handle\",\"tconstruct:ui_render#extra\",\"tconstruct:ui_render#large\",\"tconstruct:ui_render#extra_large\"]}"
+  },
+  "input_slots": [
+    {
+      "filter": {
+        "item": "tconstruct:small_blade"
+      },
+      "icon": "tconstruct:small_blade",
+      "translation_key": "item.tconstruct.small_blade",
+      "x": 63,
+      "y": 18
+    },
+    {
+      "filter": {
+        "item": "tconstruct:small_blade"
+      },
+      "icon": "tconstruct:small_blade",
+      "translation_key": "item.tconstruct.small_blade",
+      "x": 44,
+      "y": 29
+    },
+    {
+      "filter": {
+        "item": "tconstruct:tool_handle"
+      },
+      "icon": "tconstruct:tool_handle",
+      "translation_key": "item.tconstruct.tool_handle",
+      "x": 33,
+      "y": 42
+    },
+    {
+      "filter": {
+        "item": "fsq_tconstruct:cross_knot"
+      },
+      "icon": "fsq_tconstruct:cross_knot",
+      "translation_key": "item.fsq_tconstruct.cross_knot",
+      "x": 25,
+      "y": 46
+    },
+    {
+      "filter": {
+        "item": "tconstruct:tool_binding"
+      },
+      "icon": "tconstruct:tool_binding",
+      "translation_key": "item.tconstruct.tool_binding",
+      "x": 15,
+      "y": 60
+    }
+  ],
+  "sortIndex": 9,
+  "translation_key": "item.fsq_tconstruct.western_sword"
+}
