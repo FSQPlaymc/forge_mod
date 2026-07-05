@@ -44,8 +44,6 @@ public class fsq_Materials extends AbstractMaterialDataProvider {
     //public static final Material asdad = new Material(asda,3,0,false,false);
     //private static final HeadMaterialStats asd=new HeadMaterialStats(1250,2.5f, Tiers.NETHERITE,10.9f);
     //public static final ToolPartItem aaaa=new ToolPartItem(new Item.Properties(),asd.ID);
-    //IModifiable
-    //ToolPartItem
     @Override
     protected void addMaterials() {
         addMaterial(Amethyst_shardDiamond,3,ORDER_WEAPON,false);
