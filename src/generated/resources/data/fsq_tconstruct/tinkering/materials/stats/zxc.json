@@ -48,7 +48,6 @@
     "tconstruct:plating_shield": {
       "durability": 504,
       "toughness": 2.0
-    },
-    "tconstruct:soul_orb": {}
+    }
   }
 }

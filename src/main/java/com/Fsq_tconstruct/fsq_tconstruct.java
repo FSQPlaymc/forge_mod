@@ -33,6 +33,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -87,7 +88,11 @@ public class fsq_tconstruct
         FsqToolParts.register(modEventBus);
         FsqTools.register(modEventBus);
         createTAB.register(modEventBus);
-        Fsq_StatlessMaterialStats.registerStatTypes(); // 向 TiC 注册自定义魂珠部件属性类型
+    }
+
+    @SubscribeEvent
+    public static void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(Fsq_StatlessMaterialStats::registerStatTypes); // 在 COMMON_SETUP 阶段注册自定义 stat type，确保 TiC 已初始化
     }
 
 
