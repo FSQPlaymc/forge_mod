@@ -50,7 +50,7 @@ public class fsq_Materials extends AbstractMaterialDataProvider {
     protected void addMaterials() {
         addMaterial(Amethyst_shardDiamond,3,ORDER_WEAPON,false);
         addMaterial(zxc, 3, ORDER_GENERAL, true);
-        addMaterial(M_ESSENCE_SOUL,2,ORDER_WEAPON,false);
+        addMaterial(M_ESSENCE_SOUL,2,ORDER_WEAPON,true);
     }
 
 }

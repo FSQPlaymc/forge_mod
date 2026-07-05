@@ -1,6 +1,7 @@
 package com.Fsq_tconstruct.fsq_TC.other;
 
 import net.minecraft.network.chat.Component;
+import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.library.materials.stats.IMaterialStats;
 import slimeknights.tconstruct.library.materials.stats.MaterialStatType;
@@ -22,8 +23,8 @@ public enum Fsq_StatlessMaterialStats implements IMaterialStats {
     private static final List<Component> DESCRIPTION = List.of(Component.empty());
 
     @Override
-    public MaterialStatType<?> getType() {
-        return type;
+    public @NotNull MaterialStatType<?> getType() {
+        return this.type;
     }
 
     @Override
