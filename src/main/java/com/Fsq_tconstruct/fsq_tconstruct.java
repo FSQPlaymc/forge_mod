@@ -7,6 +7,7 @@ import com.Fsq_tconstruct.fluid.ModFluids;
 import com.Fsq_tconstruct.fsq_TC.*;
 import com.Fsq_tconstruct.fsq_TC.Modifiers.RegisterModifiers;
 import com.Fsq_tconstruct.fsq_TC.Tool.*;
+import com.Fsq_tconstruct.fsq_TC.other.Fsq_StatlessMaterialStats;
 import com.Fsq_tconstruct.item.createTAB;
 import com.Fsq_tconstruct.item.fsq_items;
 import com.mojang.logging.LogUtils;
@@ -86,6 +87,7 @@ public class fsq_tconstruct
         FsqToolParts.register(modEventBus);
         FsqTools.register(modEventBus);
         createTAB.register(modEventBus);
+        Fsq_StatlessMaterialStats.registerStatTypes(); // 向 TiC 注册自定义魂珠部件属性类型
     }
 
 

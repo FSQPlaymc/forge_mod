@@ -3,6 +3,7 @@ package com.Fsq_tconstruct.fsq_TC.other;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.TConstruct;
+import slimeknights.tconstruct.library.materials.MaterialRegistry;
 import slimeknights.tconstruct.library.materials.stats.IMaterialStats;
 import slimeknights.tconstruct.library.materials.stats.MaterialStatType;
 import slimeknights.tconstruct.library.materials.stats.MaterialStatsId;
@@ -18,6 +19,9 @@ public enum Fsq_StatlessMaterialStats implements IMaterialStats {
     private final MaterialStatType<Fsq_StatlessMaterialStats> type;
     Fsq_StatlessMaterialStats(String name){
         this.type=MaterialStatType.singleton(new MaterialStatsId(TConstruct.getResource(name)), this);
+    }
+    public static void registerStatTypes() {
+        MaterialRegistry.getInstance().registerStatType(HUN_ZHU.getType());// 向 TiC 注册自定义部件属性类型
     }
     private static final List<Component> LOCALIZED = List.of(IMaterialStats.makeTooltip(TConstruct.getResource("extra.no_stats")));
     private static final List<Component> DESCRIPTION = List.of(Component.empty());
