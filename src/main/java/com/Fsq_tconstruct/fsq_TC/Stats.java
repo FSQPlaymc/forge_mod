@@ -36,8 +36,8 @@ public class Stats extends AbstractMaterialStatsDataProvider {
         addMaterialStats(fsq_Materials.zxc,
                 a_head,
                 HandleMaterialStats.multipliers().miningSpeed(1.10f).attackSpeed(1.05f).build(), // 手柄
-                StatlessMaterialStats.BINDING,// 绑定结
-                Fsq_StatlessMaterialStats.HUN_ZHU
+                StatlessMaterialStats.BINDING// 绑定结
+                //Fsq_StatlessMaterialStats.HUN_ZHU
                 ); // 魂珠部件属性，使该材料可制作魂珠
         addMaterialStats(fsq_Materials.Amethyst_shardDiamond,
                 new HeadMaterialStats(620, 5f, DIAMOND, 7.5f),
