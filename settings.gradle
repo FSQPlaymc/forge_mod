@@ -14,6 +14,10 @@ pluginManagement {
         maven {//forge
             url "https://cursemaven.com"
         }
+        // 添加 ParchmentMC 仓库
+        maven {
+            url = 'https://maven.parchmentmc.org'
+        }
     }
 }
 
