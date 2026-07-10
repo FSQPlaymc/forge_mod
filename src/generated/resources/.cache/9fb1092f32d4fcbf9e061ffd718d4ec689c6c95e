@@ -1,4 +1,4 @@
-// 1.20.1	2026-07-04T18:05:07.8267135	Recipes
+// 1.20.1	2026-07-10T14:42:47.4485935	Recipes
 3015e7237741b30e6e144697f6ba025c2139d7c5 data/fsq_tconstruct/recipes/smeltery/casts/gold/cross_knot.json
 ead668adb9007567fc09afc4b6fc350303ae9e43 data/fsq_tconstruct/recipes/smeltery/casts/gold/soul_orb.json
 6e5311e379bc92d2e4b8c30b85b84b57f0fa209b data/fsq_tconstruct/recipes/smeltery/casts/red_sand/builder_block/cross_knot.json
@@ -18,6 +18,7 @@ d3aeaf876c40e48c4139bb6c5ef6e9621b9a3333 data/fsq_tconstruct/recipes/smeltery/ca
 4c13cd5d5360969a8d38ef85387a272d6b567734 data/fsq_tconstruct/recipes/tools/materials/first/amethyst_diamond.json
 ac667fbdd39485b95011dd3d0300a539a3d69047 data/fsq_tconstruct/recipes/tools/materials/first/casting/amethyst_diamond.json
 a516ce199dbe0e13e2db56b395bfe3ead1e756ec data/fsq_tconstruct/recipes/tools/materials/first/essence_soul.json
+49a784d6cf7d46458d4f528b9598039048a4cdc7 data/fsq_tconstruct/recipes/tools/materials/first/fire_crystal.json
 a1b3bacfe68afb34db628ba6375ee730e73924ba data/fsq_tconstruct/recipes/tools/materials/first/item.json
 f7249befcae33a4ddec663f4336ecdc31dd0405d data/fsq_tconstruct/recipes/tools/materials/first/melting/amethyst_diamond.json
 75d4d12fb2f9777b6d96e1125f3d5f7b686cd5e3 data/fsq_tconstruct/recipes/tools/materials/first/melting/amethyst_diamond_item.json

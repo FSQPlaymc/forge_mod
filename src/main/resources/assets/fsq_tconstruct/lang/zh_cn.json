@@ -22,5 +22,9 @@
   "modifier.fsq_tconstruct.crystal_thorn": "晶刺",
   "modifier.fsq_tconstruct.crystal_thorn.flavor": "晶刺",
   "modifier.fsq_tconstruct.crystal_thorn.description": "损失100耐久加一点伤害",
-  "_comment": "这是注释"
+  "_comment": "这是注释",
+
+  "recipe.fsq_tconstruct.custom_melter": "自定义熔炼炉",
+  "jei.fsq_tconstruct.custom_melter.temperature": "温度：%d \u00b0C",
+  "jei.fsq_tconstruct.custom_melter.time": "耗时：%.1f 秒"
 }

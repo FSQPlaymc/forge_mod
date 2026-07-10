@@ -1,0 +1,11 @@
+{
+  "type": "fsq_tconstruct:custom_melter",
+  "inputs": [
+    { "ingredient": { "item": "minecraft:blaze_rod" }, "count": 2 },
+    { "ingredient": { "item": "minecraft:magma" }, "count": 1 },
+    { "ingredient": { "item": "fsq_tconstruct:essence_soul" }, "count": 9 }
+  ],
+  "output": { "item": "fsq_tconstruct:fire_crystal", "count": 1 },
+  "temperature": 1200,
+  "time": 120
+}

@@ -104,7 +104,7 @@ minecraft {
             workingDirectory project.file('run-data')
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/'), '--existing', file('bils/TinkersConstruct-1.20.1/src/main/resources/')
+            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/'), '--existing', file('C:/Users/Administrator/.gradle/caches/forge_gradle/deobf_dependencies/slimeknights/tconstruct/TConstruct/1.20.1-3.11.2.206_mapped_official_1.20.1/extracted/')
         }
     }
 }
@@ -125,6 +125,10 @@ repositories {
     maven { // SlimeKnights and JEI
         name 'DVS1 Maven FS'
         url 'https://dvs1.progwml6.com/files/maven'
+    }
+    maven { // JEI new maven
+        name 'BlameJared Maven'
+        url 'https://maven.blamejared.com'
     }
     maven {//forge
         url "https://cursemaven.com"
@@ -156,7 +160,13 @@ dependencies {
     implementation fg.deobf("slimeknights.tconstruct:TConstruct:1.20.1-3.11.2.206")//1.20.1-3.11.2.206
     implementation fg.deobf("slimeknights.mantle:Mantle:1.20.1-1.11.108")//slimeknights/mantle/Mantle  1.20.1-1.11.108
     //implementation fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}")
-    implementation fg.deobf("curse.maven:jei-238222:7920915")
+
+    // compile against the JEI API but do not include it at runtime
+    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:15.20.0.133"))
+    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:15.20.0.133"))
+    // at runtime, use the full JEI jar for Forge
+    runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:15.20.0.133"))
+    //implementation fg.deobf("curse.maven:jei-238222:7920915")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

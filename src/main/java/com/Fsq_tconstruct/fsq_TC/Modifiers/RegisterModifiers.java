@@ -13,6 +13,8 @@ public class RegisterModifiers {
     public static final StaticModifier<Crystal_Oscillator> Crystal_Oscillator = MODIFIERS.register("crystal_oscillator", Crystal_Oscillator::new);
     public static final StaticModifier<Crystal_Thorn> Crystal_Thorn = MODIFIERS.register("crystal_thorn", Crystal_Thorn::new);
     public static final StaticModifier<TargetedAttackModifier> targetedAttack = MODIFIERS.register("targeted_attack", TargetedAttackModifier::new);
+    public static final StaticModifier<Ignite> IGNITE=MODIFIERS.register("ignite",Ignite::new);
+    public static final StaticModifier<Undying> UNDYING_STATIC_MODIFIER=MODIFIERS.register("undying",Undying::new);
 
     public static void register(IEventBus eventBus) {
         MODIFIERS.register(eventBus);

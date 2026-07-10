@@ -3,7 +3,7 @@
   "inputs": [
     { "ingredient": { "item": "minecraft:rotten_flesh" }, "count": 4 }
   ],
-  "output": { "item": "fsq_tconstruct:essence_soul", "count": 1 },
+  "output": { "item": "fsq_tconstruct:corpse_fat", "count": 1 },
   "temperature": 600,
   "time": 60
 }

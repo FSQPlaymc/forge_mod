@@ -1,23 +1,11 @@
 package com.Fsq_tconstruct.fsq_TC;
 
 import com.Fsq_tconstruct.fsq_tconstruct;
-import com.Fsq_tconstruct.item.fsq_items;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.Tiers;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.NotNull;
-import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.library.data.material.AbstractMaterialDataProvider;
-import slimeknights.tconstruct.library.materials.definition.Material;
 import slimeknights.tconstruct.library.materials.definition.MaterialId;
-import slimeknights.tconstruct.library.tools.item.IModifiable;
-import slimeknights.tconstruct.library.tools.part.ToolPartItem;
-import slimeknights.tconstruct.tools.stats.HeadMaterialStats;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 
@@ -26,6 +14,8 @@ public class fsq_Materials extends AbstractMaterialDataProvider {
     public static final MaterialId zxc=id("zxc");
     public static final MaterialId Amethyst_shardDiamond=id("amethyst_diamond");//晶钻
     public static final MaterialId M_ESSENCE_SOUL=id("m_essence_soul");
+    public static final MaterialId FIRE_CRYSTAL=id("fire_crystal");//火之精
+    public static final MaterialId WITHER_BONE =id("wither_bone");//凋骨合金
 
     public fsq_Materials(PackOutput packOutput) {
         super(packOutput);
@@ -49,6 +39,8 @@ public class fsq_Materials extends AbstractMaterialDataProvider {
         addMaterial(Amethyst_shardDiamond,3,ORDER_WEAPON,false);
         addMaterial(zxc, 3, ORDER_GENERAL, true);
         addMaterial(M_ESSENCE_SOUL,2,ORDER_WEAPON,true);
+        addMaterial(FIRE_CRYSTAL,2,ORDER_WEAPON,true);
+        addMaterial(WITHER_BONE,4,ORDER_GENERAL,false);
     }
 
 }

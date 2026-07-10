@@ -20,5 +20,7 @@ public class MyMaterialRenderInfoProvider extends AbstractMaterialRenderInfoProv
         buildRenderInfo(fsq_Materials.Amethyst_shardDiamond);
         buildRenderInfo(fsq_Materials.zxc);
         buildRenderInfo(fsq_Materials.M_ESSENCE_SOUL);
+        buildRenderInfo(fsq_Materials.FIRE_CRYSTAL);
+        buildRenderInfo(fsq_Materials.WITHER_BONE);
     }
 }

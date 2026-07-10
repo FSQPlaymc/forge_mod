@@ -40,6 +40,8 @@ public class relationItems extends RecipeProvider implements IMaterialRecipeHelp
                 "tools/materials/first/amethyst_diamond");
         materialRecipe(consumer,fsq_Materials.M_ESSENCE_SOUL,Ingredient.of(fsq_items.ESSENCE_SOUL.get()),1,1,
                 "tools/materials/first/essence_soul");
+        materialRecipe(consumer,fsq_Materials.FIRE_CRYSTAL,Ingredient.of(fsq_items.FIRE_CRYSTAL.get()),1,1,
+                "tools/materials/first/fire_crystal");
 
         // 材料熔炼配方：将材料熔化为流体
         materialMelting(consumer, fsq_Materials.Amethyst_shardDiamond,

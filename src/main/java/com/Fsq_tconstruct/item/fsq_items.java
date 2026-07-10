@@ -15,10 +15,11 @@ public class fsq_items {
     public static  Item.Properties A ;
     public static final RegistryObject<Item> ONE_ITEM=ITEMS.register("asd",()->new Item(new Item.Properties()));
     public static final RegistryObject<Item> Amethyst_shardDiamond=ITEMS.register("amethyst_diamond",()->new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CORPSE_FAT, ESSENCE_SOUL;
+    public static final RegistryObject<Item> CORPSE_FAT, ESSENCE_SOUL,FIRE_CRYSTAL;
     public static final RegistryObject<BucketItem> MOLTEN_AMETHYST_DIAMOND_BUCKET = ITEMS.register("molten_amethyst_diamond_bucket",
             () -> new BucketItem(ModFluids.MOLTEN_AMETHYST_DIAMOND, new Item.Properties().stacksTo(1)));
     static {
+        FIRE_CRYSTAL=ITEMS.register("tc_items/fire_crystal",()->new Item(new Item.Properties()));//火之精
         CORPSE_FAT=ITEMS.register("corpse_fat",()->new Item(new Item.Properties()));
         ESSENCE_SOUL =ITEMS.register("essence_soul",()->new Item(new Item.Properties()));//魂之精
     }

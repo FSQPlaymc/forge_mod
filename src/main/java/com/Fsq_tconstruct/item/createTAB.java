@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,6 +25,8 @@ public class createTAB {
                     .title(Component.translatable("itemGroup.fsq_tconstruct_TAB"))
                     .displayItems((parameters, output) -> {
                         output.accept(fsq_items.ONE_ITEM.get());
+                        output.accept(fsq_items.FIRE_CRYSTAL.get());
+                        output.accept(fsq_items.ESSENCE_SOUL.get());
                         output.accept(fsq_items.Amethyst_shardDiamond.get());
                         output.accept(ModRegistries.CUSTOM_MELTER_ITEM.get());
                     })

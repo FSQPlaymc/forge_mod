@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "fsq_tconstruct:item/tc_items/fire_crystal"
+  }
+}

@@ -22,5 +22,9 @@
   "modifier.fsq_tconstruct.crystal_thorn.flavor": "crystal thorn",
   "modifier.fsq_tconstruct.crystal_thorn.description": "/n null",
   "fluid_type.fsq_tconstruct.molten_amethyst_diamond": "Molten Amethyst Diamond",
-  "_comment": "Foundry Advancements"
+  "_comment": "Foundry Advancements",
+
+  "recipe.fsq_tconstruct.custom_melter": "Custom Melter",
+  "jei.fsq_tconstruct.custom_melter.temperature": "Temperature: %d \u00b0C",
+  "jei.fsq_tconstruct.custom_melter.time": "Time: %.1f s"
 }

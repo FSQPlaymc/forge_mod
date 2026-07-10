@@ -21,6 +21,7 @@ pluginManagement {
     }
 }
 
-plugins {
-    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
-}
+// 网络环境无法访问 foojay API，注释掉自动下载 JDK 的插件
+//plugins {
+//    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
+//}
