@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material",
   "ingredient": {
-    "item": "fsq_tconstruct:essence_soul"
+    "item": "fsq_tconstruct:tc_items/essence_soul"
   },
   "material": "fsq_tconstruct:m_essence_soul",
   "needed": 1,

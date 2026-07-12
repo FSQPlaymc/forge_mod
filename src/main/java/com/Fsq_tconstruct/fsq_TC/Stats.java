@@ -41,6 +41,10 @@ attackSpeed(1.15f) — percent(1.15) = (115 - 100)/100 = +0.15（攻击速度 +1
  */
     private  void addMeleeHarvest(){
         System.out.print("load-stats-head");
+        addMaterialStats(fsq_Materials.DRAGON_STEEL,
+                new HeadMaterialStats(620, 5f, NETHERITE, 7.5f),
+                HandleMaterialStats.multipliers().miningSpeed(1.00f).attackSpeed(1.40f).durability(1.50f).attackDamage(1.15f).build(), // 手柄
+                StatlessMaterialStats.BINDING);
         addMaterialStats(fsq_Materials.WITHER_BONE,
                 new HeadMaterialStats(620, 5f, DIAMOND, 7.5f),
                 HandleMaterialStats.multipliers().miningSpeed(1.10f).attackSpeed(1.20f).durability(1.15f).attackDamage(1.15f).build(), // 手柄
@@ -65,6 +69,9 @@ attackSpeed(1.15f) — percent(1.15) = (115 - 100)/100 = +0.15（攻击速度 +1
                 new GripMaterialStats(0f, 0.05f, 1.5f));              // 握把
     }
     private void addArmor(){
+        addArmorShieldStats(fsq_Materials.DRAGON_STEEL,
+                PlatingMaterialStats.builder().durabilityFactor(90).armor(8,13,11,8).toughness(4),
+                StatlessMaterialStats.MAILLE);
         addArmorShieldStats(fsq_Materials.WITHER_BONE,
                 PlatingMaterialStats.builder().durabilityFactor(40).armor(5,7,6,5).toughness(1),
                 StatlessMaterialStats.MAILLE);

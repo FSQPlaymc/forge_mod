@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "fsq_tconstruct:item/essence_soul"
+    "layer0": "fsq_tconstruct:item/tc_items/essence_soul"
   }
 }

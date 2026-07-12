@@ -34,6 +34,11 @@ public class MyMaterialSpriteProvider extends AbstractMaterialSpriteProvider {
                 .armor()//盔甲all
                 .fallbacks("bone", "rock")
                 .colorMapper(PaletteHelper.fromMidColor(0xFF7300ff));
+        buildMaterial(fsq_Materials.DRAGON_STEEL)
+                .meleeHarvest()//近战
+                .armor()//盔甲all
+                .fallbacks("bone", "rock")
+                .colorMapper(PaletteHelper.fromMidColor(0xFFa733ff));
 
     }//5b6ab3
 }

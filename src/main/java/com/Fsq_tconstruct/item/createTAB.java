@@ -27,7 +27,13 @@ public class createTAB {
                         output.accept(fsq_items.ONE_ITEM.get());
                         output.accept(fsq_items.FIRE_CRYSTAL.get());
                         output.accept(fsq_items.ESSENCE_SOUL.get());
+                        output.accept(fsq_items.CORPSE_FAT.get());
+                        output.accept(fsq_items.WITHER_BONE.get());
+                        output.accept(fsq_items.DRAGON_STEEL.get());
                         output.accept(fsq_items.Amethyst_shardDiamond.get());
+                        output.accept(fsq_items.MOLTEN_AMETHYST_DIAMOND_BUCKET.get());
+                        output.accept(fsq_items.MOLTEN_WITHER_BONE_BUCKET.get());
+                        output.accept(fsq_items.MOLTEN_DRAGON_STEEL_BUCKET.get());
                         output.accept(ModRegistries.CUSTOM_MELTER_ITEM.get());
                     })
                     .build());

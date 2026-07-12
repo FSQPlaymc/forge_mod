@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["CCC", "ABA", "AAA"],
+  "key": {
+    "A": { "item": "tconstruct:seared_brick" },
+    "B": { "item": "minecraft:diamond" },
+    "C": {"item": "minecraft:iron_ingot"}
+  },
+  "result": { "item": "fsq_tconstruct:custom_melter", "count": 1 }
+}

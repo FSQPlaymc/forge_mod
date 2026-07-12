@@ -49,11 +49,85 @@ public class ModFluids {
                 }
             });
 
+    public static final RegistryObject<Fluid> MOLTEN_WITHER_BONE = FLUIDS.register("molten_wither_bone",
+            () -> new ForgeFlowingFluid.Source(propertiesWitherBone()));
+    public static final RegistryObject<Fluid> MOLTEN_WITHER_BONE_FLOWING = FLUIDS.register("molten_wither_bone_flowing",
+            () -> new ForgeFlowingFluid.Flowing(propertiesWitherBone()));
+    public static final RegistryObject<FluidType> MOLTEN_WITHER_BONE_TYPE = FLUID_TYPES.register("molten_wither_bone",
+            () -> new FluidType(FluidType.Properties.create()
+                    .temperature(1350).lightLevel(8).density(2500).viscosity(12000)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)) {
+                @Override
+                public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
+                    consumer.accept(new IClientFluidTypeExtensions() {
+                        @Override
+                        public ResourceLocation getStillTexture() {
+                            return ResourceLocation.fromNamespaceAndPath(fsq_tconstruct.MODID, "block/molten_wither_bone_still");
+                        }
+
+                        @Override
+                        public ResourceLocation getFlowingTexture() {
+                            return ResourceLocation.fromNamespaceAndPath(fsq_tconstruct.MODID, "block/molten_wither_bone_flow");
+                        }
+
+                        @Override
+                        public int getTintColor() {
+                            return 0xFF2d2d3a;
+                        }
+                    });
+                }
+            });
+
     private static ForgeFlowingFluid.Properties properties() {
         return new ForgeFlowingFluid.Properties(
                 MOLTEN_AMETHYST_DIAMOND_TYPE, MOLTEN_AMETHYST_DIAMOND, MOLTEN_AMETHYST_DIAMOND_FLOWING)
                 .block(ModFluidBlocks.MOLTEN_AMETHYST_DIAMOND_BLOCK)
                 .bucket(fsq_items.MOLTEN_AMETHYST_DIAMOND_BUCKET);
+    }
+
+    private static ForgeFlowingFluid.Properties propertiesWitherBone() {
+        return new ForgeFlowingFluid.Properties(
+                MOLTEN_WITHER_BONE_TYPE, MOLTEN_WITHER_BONE, MOLTEN_WITHER_BONE_FLOWING)
+                .block(ModFluidBlocks.MOLTEN_WITHER_BONE_BLOCK)
+                .bucket(fsq_items.MOLTEN_WITHER_BONE_BUCKET);
+    }
+
+    public static final RegistryObject<Fluid> MOLTEN_DRAGON_STEEL = FLUIDS.register("molten_dragon_steel",
+            () -> new ForgeFlowingFluid.Source(propertiesDragonSteel()));
+    public static final RegistryObject<Fluid> MOLTEN_DRAGON_STEEL_FLOWING = FLUIDS.register("molten_dragon_steel_flowing",
+            () -> new ForgeFlowingFluid.Flowing(propertiesDragonSteel()));
+    public static final RegistryObject<FluidType> MOLTEN_DRAGON_STEEL_TYPE = FLUID_TYPES.register("molten_dragon_steel",
+            () -> new FluidType(FluidType.Properties.create()
+                    .temperature(1500).lightLevel(12).density(3000).viscosity(15000)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)) {
+                @Override
+                public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
+                    consumer.accept(new IClientFluidTypeExtensions() {
+                        @Override
+                        public ResourceLocation getStillTexture() {
+                            return ResourceLocation.fromNamespaceAndPath(fsq_tconstruct.MODID, "block/molten_dragon_steel_still");
+                        }
+
+                        @Override
+                        public ResourceLocation getFlowingTexture() {
+                            return ResourceLocation.fromNamespaceAndPath(fsq_tconstruct.MODID, "block/molten_dragon_steel_flow");
+                        }
+
+                        @Override
+                        public int getTintColor() {
+                            return 0xFF5c1010;
+                        }
+                    });
+                }
+            });
+
+    private static ForgeFlowingFluid.Properties propertiesDragonSteel() {
+        return new ForgeFlowingFluid.Properties(
+                MOLTEN_DRAGON_STEEL_TYPE, MOLTEN_DRAGON_STEEL, MOLTEN_DRAGON_STEEL_FLOWING)
+                .block(ModFluidBlocks.MOLTEN_DRAGON_STEEL_BLOCK)
+                .bucket(fsq_items.MOLTEN_DRAGON_STEEL_BUCKET);
     }
 
     public static void register(IEventBus bus) {

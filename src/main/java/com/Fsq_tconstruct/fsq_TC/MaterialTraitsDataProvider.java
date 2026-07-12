@@ -30,5 +30,8 @@ public  class MaterialTraitsDataProvider extends AbstractMaterialTraitDataProvid
         addTraits(fsq_Materials.FIRE_CRYSTAL,Fsq_StatlessMaterialStats.HUN_ZHU.getType().getId(),RegisterModifiers.IGNITE.getId());
         addTraits(fsq_Materials.WITHER_BONE,MELEE_HARVEST,RegisterModifiers.myTrait.getId());
         addTraits(fsq_Materials.WITHER_BONE,ARMOR,RegisterModifiers.UNDYING_STATIC_MODIFIER.getId());
+        addTraits(fsq_Materials.DRAGON_STEEL,MELEE_HARVEST,RegisterModifiers.RUDE);
+        addTraits(fsq_Materials.DRAGON_STEEL,MELEE_HARVEST,RegisterModifiers.TOUGHNESS);
+        addTraits(fsq_Materials.DRAGON_STEEL,ARMOR,ModifierIds.recurrentProtection);
     }
 }

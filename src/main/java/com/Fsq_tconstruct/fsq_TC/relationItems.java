@@ -8,7 +8,6 @@ import com.Fsq_tconstruct.item.fsq_items;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.library.data.recipe.IMaterialRecipeHelper;
@@ -17,7 +16,6 @@ import net.minecraftforge.fluids.FluidStack;
 import slimeknights.tconstruct.library.recipe.FluidValues;
 import slimeknights.tconstruct.library.recipe.casting.material.MaterialFluidRecipeBuilder;
 import slimeknights.tconstruct.library.recipe.melting.MeltingRecipeBuilder;
-import slimeknights.tconstruct.library.tools.part.IMaterialItem;
 
 import java.util.function.Consumer;
 
@@ -42,6 +40,10 @@ public class relationItems extends RecipeProvider implements IMaterialRecipeHelp
                 "tools/materials/first/essence_soul");
         materialRecipe(consumer,fsq_Materials.FIRE_CRYSTAL,Ingredient.of(fsq_items.FIRE_CRYSTAL.get()),1,1,
                 "tools/materials/first/fire_crystal");
+        materialRecipe(consumer,fsq_Materials.WITHER_BONE,Ingredient.of(fsq_items.WITHER_BONE.get()),1,1,
+                "tools/materials/first/wither_bone");
+        materialRecipe(consumer,fsq_Materials.DRAGON_STEEL,Ingredient.of(fsq_items.DRAGON_STEEL.get()),1,1,
+                "tools/materials/first/dragon_steel");
 
         // 材料熔炼配方：将材料熔化为流体
         materialMelting(consumer, fsq_Materials.Amethyst_shardDiamond,
@@ -66,6 +68,29 @@ public class relationItems extends RecipeProvider implements IMaterialRecipeHelp
         // 西洋剑工具组装配方：在工匠组装台上合成
         toolBuilding(consumer, FsqTools.XJ, "tools/building/");
         // 魂戈工具组装配方：在工匠组装台上合成
-        toolBuilding(consumer, FsqTools.HJ, "tools/building/");
+        toolBuilding(consumer, FsqTools.HG, "tools/building/");
+
+        // ===== Wither Bone 流体及浇筑 =====
+        // 材料熔炼配方：将材料熔化为流体
+        materialMelting(consumer, fsq_Materials.WITHER_BONE,
+                ModFluids.MOLTEN_WITHER_BONE.get(), FluidValues.INGOT, "tools/materials/first/");
+        // 材料流体映射配方：流体→材质
+        MaterialFluidRecipeBuilder.material(fsq_Materials.WITHER_BONE)
+                .setFluidAndTemp(new FluidStack(ModFluids.MOLTEN_WITHER_BONE.get(), FluidValues.INGOT))
+                .save(consumer, location("tools/materials/first/casting/" + fsq_Materials.WITHER_BONE.getLocation('_').getPath()));
+        // 直接物品融化配方：使冶炼炉能直接融化 wither_bone 物品
+        MeltingRecipeBuilder.melting(Ingredient.of(fsq_items.WITHER_BONE.get()),
+                ModFluids.MOLTEN_WITHER_BONE.get(), FluidValues.INGOT, 1.0f)
+                .save(consumer, location("tools/materials/first/melting/wither_bone_item"));
+
+        // ===== Dragon Steel 流体及浇筑 =====
+        materialMelting(consumer, fsq_Materials.DRAGON_STEEL,
+                ModFluids.MOLTEN_DRAGON_STEEL.get(), FluidValues.INGOT, "tools/materials/first/");
+        MaterialFluidRecipeBuilder.material(fsq_Materials.DRAGON_STEEL)
+                .setFluidAndTemp(new FluidStack(ModFluids.MOLTEN_DRAGON_STEEL.get(), FluidValues.INGOT))
+                .save(consumer, location("tools/materials/first/casting/" + fsq_Materials.DRAGON_STEEL.getLocation('_').getPath()));
+        MeltingRecipeBuilder.melting(Ingredient.of(fsq_items.DRAGON_STEEL.get()),
+                ModFluids.MOLTEN_DRAGON_STEEL.get(), FluidValues.INGOT, 1.0f)
+                .save(consumer, location("tools/materials/first/melting/dragon_steel_item"));
     }
 }

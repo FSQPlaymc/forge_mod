@@ -17,7 +17,7 @@ public class FsqTools {
             ToolDefinition.create(ResourceLocation.fromNamespaceAndPath(fsq_tconstruct.MODID, "western_sword"));
     public static final ToolDefinition SOUL_SPEAR =//魂戈
             ToolDefinition.create(ResourceLocation.fromNamespaceAndPath(fsq_tconstruct.MODID,"soul_spear"));
-    public static final RegistryObject<ModifiableItem>HJ=TOOS.register("soul_spear",
+    public static final RegistryObject<ModifiableItem> HG =TOOS.register("soul_spear",
             ()->new ModifiableItem(new Item.Properties(), SOUL_SPEAR));
     public static final RegistryObject<ModifiableItem> XJ=TOOS.register("western_sword",
             ()->new ModifiableItem(new Item.Properties(),XI_YANG_JIAN));

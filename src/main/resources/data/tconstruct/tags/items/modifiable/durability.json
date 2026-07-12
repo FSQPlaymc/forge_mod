@@ -1,1 +1,8 @@
-{"values": ["fsq_tconstruct:western_sword"]}
+{
+  "replace": false,
+  "values": [
+    "fsq_tconstruct:western_sword",
+    "fsq_tconstruct:soul_spear"
+  ]
+}
+

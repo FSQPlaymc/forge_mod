@@ -1,13 +1,10 @@
 package com.Fsq_tconstruct.fsq_TC.Tool;
 
-import com.Fsq_tconstruct.fsq_tconstruct;
 import net.minecraft.data.PackOutput;
 import slimeknights.tconstruct.library.data.tinkering.AbstractStationSlotLayoutProvider;
-import slimeknights.tconstruct.library.materials.RandomMaterial;
-import slimeknights.tconstruct.library.tools.definition.module.material.DefaultMaterialsModule;
 import slimeknights.tconstruct.tools.TinkerToolParts;
 
-import static com.Fsq_tconstruct.fsq_TC.Tool.FsqTools.HJ;
+import static com.Fsq_tconstruct.fsq_TC.Tool.FsqTools.HG;
 import static com.Fsq_tconstruct.fsq_TC.Tool.FsqTools.XJ;
 
 public class FsqStationSlotLayoutProvider extends AbstractStationSlotLayoutProvider {
@@ -20,7 +17,7 @@ public class FsqStationSlotLayoutProvider extends AbstractStationSlotLayoutProvi
 
     @Override
     protected void addLayouts() {
-        defineModifiable(HJ.get())
+        defineModifiable(HG.get())
                 .sortIndex(SORT_WEAPON + SORT_LARGE)
                 .addInputItem(TinkerToolParts.smallBlade,  63, 18)   // blade1
                 .addInputItem(TinkerToolParts.largePlate,  44, 29)   // blade2

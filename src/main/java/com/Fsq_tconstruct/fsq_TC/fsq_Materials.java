@@ -16,6 +16,7 @@ public class fsq_Materials extends AbstractMaterialDataProvider {
     public static final MaterialId M_ESSENCE_SOUL=id("m_essence_soul");
     public static final MaterialId FIRE_CRYSTAL=id("fire_crystal");//火之精
     public static final MaterialId WITHER_BONE =id("wither_bone");//凋骨合金
+    public static final MaterialId DRAGON_STEEL=id("dragon_steel");//龙钢
 
     public fsq_Materials(PackOutput packOutput) {
         super(packOutput);
@@ -41,6 +42,7 @@ public class fsq_Materials extends AbstractMaterialDataProvider {
         addMaterial(M_ESSENCE_SOUL,2,ORDER_WEAPON,true);
         addMaterial(FIRE_CRYSTAL,2,ORDER_WEAPON,true);
         addMaterial(WITHER_BONE,4,ORDER_GENERAL,false);
+        addMaterial(DRAGON_STEEL,5,ORDER_GENERAL,false);
     }
 
 }
