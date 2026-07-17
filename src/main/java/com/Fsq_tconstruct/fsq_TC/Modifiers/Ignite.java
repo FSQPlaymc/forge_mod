@@ -18,7 +18,7 @@ public class Ignite extends Modifier implements MeleeHitModifierHook {
     public void afterMeleeHit(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
         LivingEntity a= context.getLivingTarget();
         if (a != null) {
-            a.setSecondsOnFire(100);
+            a.setSecondsOnFire(5);
         }
     }
 }
