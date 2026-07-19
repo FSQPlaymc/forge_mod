@@ -20,6 +20,6 @@ public class FsqTools {
     public static final RegistryObject<ModifiableItem> HG =TOOS.register("soul_spear",
             ()->new ModifiableItem(new Item.Properties(), SOUL_SPEAR));
     public static final RegistryObject<ModifiableItem> XJ=TOOS.register("western_sword",
-            ()->new ModifiableItem(new Item.Properties(),XI_YANG_JIAN));
+            WesternSwordItem::new);
     public static void register(IEventBus bus) { TOOS.register(bus); }
 }
