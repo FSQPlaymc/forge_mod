@@ -26,6 +26,9 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
+      - name: Remove Windows-specific JDK path for CI
+        run: sed -i '/org.gradle.java.home/d' gradle.properties
+
       - name: Build with Gradle
         run: ./gradlew build
 
