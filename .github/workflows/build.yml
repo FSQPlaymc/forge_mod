@@ -29,6 +29,9 @@ jobs:
       - name: Remove Windows-specific JDK path for CI
         run: sed -i '/org.gradle.java.home/d' gradle.properties
 
+      - name: Run data generation
+        run: ./gradlew runData
+
       - name: Build with Gradle
         run: ./gradlew build
 
