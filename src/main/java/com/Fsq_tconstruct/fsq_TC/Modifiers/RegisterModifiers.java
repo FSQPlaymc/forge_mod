@@ -35,6 +35,8 @@ public class RegisterModifiers {
     public static final StaticModifier<HolyModifier> HOLY = MODIFIERS.register("holy", HolyModifier::new);
     /** 剧毒 — 攻击给予缓慢 III 30s + 中毒 II 10s */
     public static final StaticModifier<VirulentPoisonModifier> VIRULENT_POISON = MODIFIERS.register("virulent_poison", VirulentPoisonModifier::new);
+    /** 破甲 — 攻击伤害一分为二：50% 正常伤害 + 50% 无视护甲的破甲伤害，且攻击无视无敌帧 */
+    public static final StaticModifier<ArmorPiercingModifier> ARMOR_PIERCING = MODIFIERS.register("armor_piercing", ArmorPiercingModifier::new);
 
     public static void register(IEventBus eventBus) {
         MODIFIERS.register(eventBus);

@@ -76,6 +76,7 @@ public class FsqToolDefinitionDataProvider extends AbstractToolDefinitionDataPro
                         .trait(ModifierIds.reach,1)//长臂一
                         .trait(ModifierIds.silkyShears)
                         .trait(ModifierIds.pierce,5)//穿甲5
+                                .trait(RegisterModifiers.ARMOR_PIERCING,1)
                         //.trait(RegisterModifiers.)// 示例
                         .build())
                 .module(ToolActionsModule.of(ToolActions.SWORD_DIG))

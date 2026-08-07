@@ -1,5 +1,6 @@
 package com.Fsq_tconstruct.fsq_TC.Modifiers;
 
+
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -19,6 +20,12 @@ public class Undying extends Modifier implements DamageBlockModifierHook {
         hookBuilder.addHook(this, ModifierHooks.DAMAGE_BLOCK);
     }
 
+public class Undying extends Modifier implements  DamageBlockModifierHook {//不灭
+    @Override
+    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
+        // 注册 TOOL_STATS 钩子，用于修改工具的基础属性
+        hookBuilder.addHook(this, ModifierHooks.DAMAGE_BLOCK);
+    }
     public boolean isDamageBlocked(IToolStackView tool, ModifierEntry modifier, EquipmentContext context, EquipmentSlot slotType, DamageSource source, float amount){
         if (source.is(DamageTypeTags.IS_FIRE)){
             LivingEntity entity = context.getEntity();
@@ -26,5 +33,6 @@ public class Undying extends Modifier implements DamageBlockModifierHook {
             return true;
         }
         return false;
+        //return amount; ON_ATTACKED
     }
 }

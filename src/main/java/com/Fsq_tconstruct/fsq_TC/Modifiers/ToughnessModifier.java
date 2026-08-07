@@ -27,6 +27,6 @@ public class ToughnessModifier extends Modifier implements ToolStatsModifierHook
     @Override
     public void addToolStats(IToolContext context, ModifierEntry modifier, ModifierStatsBuilder builder) {
         // 每级增加 2000 点耐久，线性叠加
-        ToolStats.DURABILITY.add(builder, 2000 * modifier.intEffectiveLevel());
+        ToolStats.DURABILITY.add(builder, 4000 * modifier.intEffectiveLevel());
     }
 }

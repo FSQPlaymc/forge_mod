@@ -9,16 +9,16 @@ import slimeknights.tconstruct.library.module.ModuleHookMap;
 import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 
-public class Ignite extends Modifier implements MeleeHitModifierHook {//点燃，着火
+public class Ignite extends Modifier implements MeleeHitModifierHook {
     @Override
-    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
+    public void registerHooks(ModuleHookMap.Builder hookBuilder) {
         hookBuilder.addHook(this, ModifierHooks.MELEE_HIT);
     }
     @Override
     public void afterMeleeHit(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
         LivingEntity a= context.getLivingTarget();
         if (a != null) {
-            a.setSecondsOnFire(10);
+            a.setSecondsOnFire(5);
         }
     }
 }
