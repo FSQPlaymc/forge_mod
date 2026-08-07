@@ -9,8 +9,8 @@
     "binding1": "fsq_tconstruct:item/tool/soul_spear/toughbinding"
   },
   "parts": [
-    { "name": "handle",   "index": 2 },
-    { "name": "soul_orb", "index": 3 },
+    { "name": "handle",   "index": 3 },
+    { "name": "soul_orb", "index": 2 },
     { "name": "binding1", "index": 4 },
     { "name": "head2",    "index": 1 },
     { "name": "head1",    "index": 0 }

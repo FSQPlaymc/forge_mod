@@ -1,28 +1,115 @@
 {
+  "_comment": "FSQ TCon 物品",
+
   "item.fsq_tconstruct.asd": "中文",
   "item.fsq_tconstruct.amethyst_diamond": "晶钻",
+  "item.fsq_tconstruct.tc_items/dragon_steel": "龙钢",
+  "item.fsq_tconstruct.tc_items/wither_bone": "凋骨合金",
+  "item.fsq_tconstruct.tc_items/fire_crystal": "火之精",
+  "item.fsq_tconstruct.corpse_fat": "尸油球",
+  "item.fsq_tconstruct.tc_items/essence_soul": "魂之精",
+  "item.fsq_tconstruct.molten_wither_bone_bucket": "熔融凋骨合金桶",
+  "item.fsq_tconstruct.molten_dragon_steel_bucket": "熔融龙钢桶",
+  "item.fsq_tconstruct.soul_spear": "魂戈",
+  "item.fsq_tconstruct.soul_orb": "魂珠",
+  "item.fsq_tconstruct.cross/soul_orb_cast": "魂珠金铸模",
+  "item.fsq_tconstruct.cross/soul_orb_sand_cast": "魂珠砂铸模",
+  "item.fsq_tconstruct.cross/soul_orb_red_sand_cast": "魂珠红砂铸模",
+
+  "item.fsq_tconstruct.cross_knot": "十字结",
+  "item.fsq_tconstruct.cross_knot_cast": "十字结金铸模",
+  "item.fsq_tconstruct.cross_knot_sand_cast": "十字结砂铸模",
+  "item.fsq_tconstruct.cross_knot_red_sand_cast": "十字结红砂铸模",
+  "item.fsq_tconstruct.western_sword": "西洋剑",
+  "item.fsq_tconstruct.molten_amethyst_diamond_bucket": "熔融晶钻桶",
+
+  "_comment": "FSQ TCon 创造模式标签页",
+
+  "itemGroup.fsq_tconstruct_TAB": "FSQ 工具武器",
+
+  "_comment": "FSQ TCon 方块",
+
   "block.fsq_tconstruct.custom_melter": "自定义熔炼炉",
+
+  "_comment": "FSQ TCon 流体",
+
+  "fluid.fsq_tconstruct.molten_amethyst_diamond": "熔融晶钻",
+  "fluid.fsq_tconstruct.molten_wither_bone": "熔融凋骨合金",
+  "fluid.fsq_tconstruct.molten_dragon_steel": "熔融龙钢",
+  "fluid_type.fsq_tconstruct.molten_amethyst_diamond": "熔融晶钻",
+  "fluid_type.fsq_tconstruct.molten_wither_bone": "熔融凋骨合金",
+  "fluid_type.fsq_tconstruct.molten_dragon_steel": "熔融龙钢",
+  "block.fsq_tconstruct.molten_amethyst_diamond": "熔融晶钻",
+  "block.fsq_tconstruct.molten_wither_bone": "熔融凋骨合金",
+  "block.fsq_tconstruct.molten_dragon_steel": "熔融龙钢",
+
+  "_comment": "FSQ TCon 材料",
+
+  "material.fsq_tconstruct.amethyst_diamond": "晶钻",
+  "material.fsq_tconstruct.zxc": "测试材料",
+  "material.fsq_tconstruct.m_essence_soul": "精华灵魂",
+  "material.fsq_tconstruct.fire_crystal": "火之精",
+  "material.fsq_tconstruct.wither_bone": "凋骨合金",
+  "material.fsq_tconstruct.dragon_steel": "龙钢",
+
+  "_comment": "FSQ TCon 修饰符",
+
+  "modifier.fsq_tconstruct.my_trait": "my_trait",
+  "modifier.fsq_tconstruct.my_trait.flavor": "my_trait",
+  "modifier.fsq_tconstruct.my_trait.description": "回复部分造成的伤害",
+
+  "modifier.fsq_tconstruct.crystal_oscillator": "晶震",
+  "modifier.fsq_tconstruct.crystal_oscillator.flavor": "共振挖掘",
+  "modifier.fsq_tconstruct.crystal_oscillator.description": "挖掘给予急迫",
+
+  "modifier.fsq_tconstruct.crystal_thorn": "晶刺",
+  "modifier.fsq_tconstruct.crystal_thorn.flavor": "结晶反击",
+  "modifier.fsq_tconstruct.crystal_thorn.description": "损失100耐久加一点伤害",
+
+  "modifier.fsq_tconstruct.targeted_attack": "瞄准攻击",
+  "modifier.fsq_tconstruct.targeted_attack.flavor": "精准打击",
+  "modifier.fsq_tconstruct.targeted_attack.description": "右键远程精准打击目标",
+
+  "modifier.fsq_tconstruct.ignite": "点燃",
+  "modifier.fsq_tconstruct.ignite.flavor": "烈焰焚身",
+  "modifier.fsq_tconstruct.ignite.description": "攻击使目标着火",
+
+  "modifier.fsq_tconstruct.undying": "亡灵",
+  "modifier.fsq_tconstruct.undying.flavor": "烈焰不侵",
+  "modifier.fsq_tconstruct.undying.description": "免疫火焰伤害",
+
+  "modifier.fsq_tconstruct.toughness": "坚韧",
+  "modifier.fsq_tconstruct.toughness.flavor": "不屈意志",
+  "modifier.fsq_tconstruct.toughness.description": "每级提高工具2000点基础耐久",
+
+  "modifier.fsq_tconstruct.rude": "无礼",
+  "modifier.fsq_tconstruct.rude.flavor": "毫无礼貌",
+  "modifier.fsq_tconstruct.rude.description": "对玩家和BOSS造成的近战伤害×5",
+
+  "modifier.fsq_tconstruct.dragon_strike": "龙击",
+  "modifier.fsq_tconstruct.dragon_strike.flavor": "龙之力量",
+  "modifier.fsq_tconstruct.dragon_strike.description": "近战攻击附加20%额外魔法伤害",
+
+  "modifier.fsq_tconstruct.bee_sting": "蜂蛰",
+  "modifier.fsq_tconstruct.bee_sting.flavor": "嗡嗡怒火",
+  "modifier.fsq_tconstruct.bee_sting.description": "攻击给予虚弱40秒+中毒30秒",
+
+  "modifier.fsq_tconstruct.holy": "圣洁",
+  "modifier.fsq_tconstruct.holy.flavor": "神圣制裁",
+  "modifier.fsq_tconstruct.holy.description": "根据目标中毒等级造成额外魔法伤害",
+
+  "modifier.fsq_tconstruct.virulent_poison": "剧毒",
+  "modifier.fsq_tconstruct.virulent_poison.flavor": "致命毒液",
+  "modifier.fsq_tconstruct.virulent_poison.description": "攻击给予缓慢III 30秒+中毒II 10秒",
+
+  "_comment": "FSQ TCon GUI",
+
   "gui.fsq_tconstruct.custom_melter": "自定义熔炼炉",
   "gui.fsq_tconstruct.custom_melter.no_recipe": "无可用的配方",
   "gui.fsq_tconstruct.custom_melter.no_heat": "温度不足",
   "gui.fsq_tconstruct.custom_melter.no_space": "无法产出",
-  "item.fsq_tconstruct.cross_knot": "十字结",
-  "item.fsq_tconstruct.western_sword": "西洋剑",
-  "item.fsq_tconstruct.cross_knot_cast": "十字结金铸模",
-  "item.fsq_tconstruct.cross_knot_sand_cast": "十字结砂铸模",
-  "item.fsq_tconstruct.cross_knot_red_sand_cast": "十字结红砂铸模",
-  "fluid.fsq_tconstruct.molten_amethyst_diamond": "熔融晶钻",
-  "fluid_type.fsq_tconstruct.molten_amethyst_diamond": "熔融晶钻",
-  "item.fsq_tconstruct.molten_amethyst_diamond_bucket": "熔融晶钻桶",
-  "block.fsq_tconstruct.molten_amethyst_diamond": "熔融晶钻",
-  "material.fsq_tconstruct.amethyst_diamond": "晶钻",
-  "modifier.fsq_tconstruct.crystaL_oscillator": "晶震",
-  "modifier.fsq_tconstruct.crystaL_oscillator.flavor": "晶震",
-  "modifier.fsq_tconstruct.crystal_oscillator.description": "挖掘给予急迫",
-  "modifier.fsq_tconstruct.crystal_thorn": "晶刺",
-  "modifier.fsq_tconstruct.crystal_thorn.flavor": "晶刺",
-  "modifier.fsq_tconstruct.crystal_thorn.description": "损失100耐久加一点伤害",
-  "_comment": "这是注释",
+
+  "_comment": "FSQ TCon 配方 & JEI",
 
   "recipe.fsq_tconstruct.custom_melter": "自定义熔炼炉",
   "jei.fsq_tconstruct.custom_melter.temperature": "温度：%d \u00b0C",

@@ -13,7 +13,12 @@ import slimeknights.tconstruct.library.module.ModuleHookMap;
 import slimeknights.tconstruct.library.tools.context.EquipmentContext;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 
-import java.util.Objects;
+public class Undying extends Modifier implements DamageBlockModifierHook {
+    @Override
+    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
+        super.registerHooks(hookBuilder);
+        hookBuilder.addHook(this, ModifierHooks.DAMAGE_BLOCK);
+    }
 
 public class Undying extends Modifier implements  DamageBlockModifierHook {//不灭
     @Override
@@ -23,8 +28,8 @@ public class Undying extends Modifier implements  DamageBlockModifierHook {//不
     }
     public boolean isDamageBlocked(IToolStackView tool, ModifierEntry modifier, EquipmentContext context, EquipmentSlot slotType, DamageSource source, float amount){
         if (source.is(DamageTypeTags.IS_FIRE)){
-            LivingEntity PLAYER= context.getEntity();
-            PLAYER.setSecondsOnFire(100);
+            LivingEntity entity = context.getEntity();
+            entity.setSecondsOnFire(100);
             return true;
         }
         return false;

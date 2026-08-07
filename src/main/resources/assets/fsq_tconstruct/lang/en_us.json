@@ -1,28 +1,115 @@
 {
+  "_comment": "FSQ TCon Items",
+
   "item.fsq_tconstruct.asd": "asda",
   "item.fsq_tconstruct.amethyst_diamond": "amethyst diamond",
+  "item.fsq_tconstruct.tc_items/dragon_steel": "Dragon Steel",
+  "item.fsq_tconstruct.tc_items/wither_bone": "Wither Bone",
+  "item.fsq_tconstruct.tc_items/fire_crystal": "Fire Crystal",
+  "item.fsq_tconstruct.corpse_fat": "Corpse Fat",
+  "item.fsq_tconstruct.tc_items/essence_soul": "Essence Soul",
+  "item.fsq_tconstruct.molten_wither_bone_bucket": "Molten Wither Bone Bucket",
+  "item.fsq_tconstruct.molten_dragon_steel_bucket": "Molten Dragon Steel Bucket",
+  "item.fsq_tconstruct.soul_spear": "Soul Spear",
+  "item.fsq_tconstruct.soul_orb": "Soul Orb",
+  "item.fsq_tconstruct.cross/soul_orb_cast": "Soul Orb Gold Cast",
+  "item.fsq_tconstruct.cross/soul_orb_sand_cast": "Soul Orb Sand Cast",
+  "item.fsq_tconstruct.cross/soul_orb_red_sand_cast": "Soul Orb Red Sand Cast",
+
+  "item.fsq_tconstruct.cross_knot": "Cross Knot",
+  "item.fsq_tconstruct.cross_knot_cast": "Cross Knot Gold Cast",
+  "item.fsq_tconstruct.cross_knot_sand_cast": "Cross Knot Sand Cast",
+  "item.fsq_tconstruct.cross_knot_red_sand_cast": "Cross Knot Red Sand Cast",
+  "item.fsq_tconstruct.western_sword": "Western Sword",
+  "item.fsq_tconstruct.molten_amethyst_diamond_bucket": "Molten Amethyst Diamond Bucket",
+
+  "_comment": "FSQ TCon Creative Tab",
+
+  "itemGroup.fsq_tconstruct_TAB": "FSQ TConstruct",
+
+  "_comment": "FSQ TCon Blocks",
+
   "block.fsq_tconstruct.custom_melter": "Custom Melter",
+
+  "_comment": "FSQ TCon Fluids",
+
+  "fluid.fsq_tconstruct.molten_amethyst_diamond": "Molten Amethyst Diamond",
+  "fluid.fsq_tconstruct.molten_wither_bone": "Molten Wither Bone",
+  "fluid.fsq_tconstruct.molten_dragon_steel": "Molten Dragon Steel",
+  "fluid_type.fsq_tconstruct.molten_amethyst_diamond": "Molten Amethyst Diamond",
+  "fluid_type.fsq_tconstruct.molten_wither_bone": "Molten Wither Bone",
+  "fluid_type.fsq_tconstruct.molten_dragon_steel": "Molten Dragon Steel",
+  "block.fsq_tconstruct.molten_amethyst_diamond": "Molten Amethyst Diamond",
+  "block.fsq_tconstruct.molten_wither_bone": "Molten Wither Bone",
+  "block.fsq_tconstruct.molten_dragon_steel": "Molten Dragon Steel",
+
+  "_comment": "FSQ TCon Materials",
+
+  "material.fsq_tconstruct.amethyst_diamond": "Amethyst Diamond",
+  "material.fsq_tconstruct.zxc": "Test Material",
+  "material.fsq_tconstruct.m_essence_soul": "Essence Soul",
+  "material.fsq_tconstruct.fire_crystal": "Fire Crystal",
+  "material.fsq_tconstruct.wither_bone": "Wither Bone",
+  "material.fsq_tconstruct.dragon_steel": "Dragon Steel",
+
+  "_comment": "FSQ TCon Modifiers",
+
+  "modifier.fsq_tconstruct.my_trait": "my_trait",
+  "modifier.fsq_tconstruct.my_trait.flavor": "my_trait",
+  "modifier.fsq_tconstruct.my_trait.description": "Heals a portion of damage dealt",
+
+  "modifier.fsq_tconstruct.crystal_oscillator": "Crystal Oscillator",
+  "modifier.fsq_tconstruct.crystal_oscillator.flavor": "Resonant mining",
+  "modifier.fsq_tconstruct.crystal_oscillator.description": "Mining grants Haste",
+
+  "modifier.fsq_tconstruct.crystal_thorn": "Crystal Thorn",
+  "modifier.fsq_tconstruct.crystal_thorn.flavor": "Crystalline retribution",
+  "modifier.fsq_tconstruct.crystal_thorn.description": "Deals extra damage based on lost durability",
+
+  "modifier.fsq_tconstruct.targeted_attack": "Targeted Attack",
+  "modifier.fsq_tconstruct.targeted_attack.flavor": "Pinpoint accuracy",
+  "modifier.fsq_tconstruct.targeted_attack.description": "Right-click to perform a precise strike at range",
+
+  "modifier.fsq_tconstruct.ignite": "Ignite",
+  "modifier.fsq_tconstruct.ignite.flavor": "Burn them all",
+  "modifier.fsq_tconstruct.ignite.description": "Sets the target on fire on hit",
+
+  "modifier.fsq_tconstruct.undying": "Undying",
+  "modifier.fsq_tconstruct.undying.flavor": "Defy the flames",
+  "modifier.fsq_tconstruct.undying.description": "Grants immunity to fire damage",
+
+  "modifier.fsq_tconstruct.toughness": "Toughness",
+  "modifier.fsq_tconstruct.toughness.flavor": "Unbreakable",
+  "modifier.fsq_tconstruct.toughness.description": "Increases base durability by 2000 per level",
+
+  "modifier.fsq_tconstruct.rude": "Rude",
+  "modifier.fsq_tconstruct.rude.flavor": "No manners",
+  "modifier.fsq_tconstruct.rude.description": "Multiplies melee damage against players and bosses by 5",
+
+  "modifier.fsq_tconstruct.dragon_strike": "Dragon Strike",
+  "modifier.fsq_tconstruct.dragon_strike.flavor": "Power of the dragon",
+  "modifier.fsq_tconstruct.dragon_strike.description": "Adds 20% bonus magic damage to melee attacks",
+
+  "modifier.fsq_tconstruct.bee_sting": "Bee Sting",
+  "modifier.fsq_tconstruct.bee_sting.flavor": "Buzzing fury",
+  "modifier.fsq_tconstruct.bee_sting.description": "Applies Weakness and Poison on hit",
+
+  "modifier.fsq_tconstruct.holy": "Holy",
+  "modifier.fsq_tconstruct.holy.flavor": "Divine judgment",
+  "modifier.fsq_tconstruct.holy.description": "Deals bonus magic damage based on target's poison level",
+
+  "modifier.fsq_tconstruct.virulent_poison": "Virulent Poison",
+  "modifier.fsq_tconstruct.virulent_poison.flavor": "Deadly venom",
+  "modifier.fsq_tconstruct.virulent_poison.description": "Applies Slowness and Poison on hit",
+
+  "_comment": "FSQ TCon GUI",
+
   "gui.fsq_tconstruct.custom_melter": "Custom Melter",
   "gui.fsq_tconstruct.custom_melter.no_recipe": "No valid recipe",
   "gui.fsq_tconstruct.custom_melter.no_heat": "Temperature too low",
   "gui.fsq_tconstruct.custom_melter.no_space": "Cannot output",
-  "item.fsq_tconstruct.cross_knot": "Cross Knot",
-  "item.fsq_tconstruct.western_sword": "Western Sword",
-  "item.fsq_tconstruct.cross_knot_cast": "Cross Knot Gold Cast",
-  "item.fsq_tconstruct.cross_knot_sand_cast": "Cross Knot Sand Cast",
-  "item.fsq_tconstruct.cross_knot_red_sand_cast": "Cross Knot Red Sand Cast",
-  "fluid.fsq_tconstruct.molten_amethyst_diamond": "Molten Amethyst Diamond",
-  "item.fsq_tconstruct.molten_amethyst_diamond_bucket": "Molten Amethyst Diamond Bucket",
-  "block.fsq_tconstruct.molten_amethyst_diamond": "Molten Amethyst Diamond",
-  "material.fsq_tconstruct.amethyst_diamond": "amethyst diamond",
-  "modifier.fsq_tconstruct.crystaL_oscillator": "crystaL oscillator",
-  "modifier.fsq_tconstruct.crystaL_oscillator.flavor": "crystaL oscillator",
-  "modifier.fsq_tconstruct.crystal_oscillator.description": "/n null",
-  "modifier.fsq_tconstruct.crystal_thorn": "crystal thorn",
-  "modifier.fsq_tconstruct.crystal_thorn.flavor": "crystal thorn",
-  "modifier.fsq_tconstruct.crystal_thorn.description": "/n null",
-  "fluid_type.fsq_tconstruct.molten_amethyst_diamond": "Molten Amethyst Diamond",
-  "_comment": "Foundry Advancements",
+
+  "_comment": "FSQ TCon Recipes & JEI",
 
   "recipe.fsq_tconstruct.custom_melter": "Custom Melter",
   "jei.fsq_tconstruct.custom_melter.temperature": "Temperature: %d \u00b0C",
