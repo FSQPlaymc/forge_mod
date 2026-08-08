@@ -1,6 +1,10 @@
 package com.Fsq_tconstruct.fsq_TC.Modifiers;
 
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.level.Level;
 import slimeknights.tconstruct.common.TinkerDamageTypes;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
@@ -118,6 +122,9 @@ public class ArmorPiercingModifier extends Modifier
         float armorPiercingDamage = this.originalDamage * ARMOR_PIERCING_RATIO;
         if (armorPiercingDamage <= 0) return;
 
+        // 生成破甲粒子特效，用于直观查看破甲伤害是否触发
+        spawnPiercingParticles(context);
+
         // 构造 PIERCING 伤害源，以攻击者（玩家或怪物）为伤害来源
         DamageSource source = TinkerDamageTypes.source(
             context.getLevel().registryAccess(),
@@ -129,5 +136,26 @@ public class ArmorPiercingModifier extends Modifier
         ToolAttackUtil.attackEntitySecondary(
             source, armorPiercingDamage,
             context.getTarget(), context.getLivingTarget(), true);
+    }
+
+    /**
+     * 在目标位置生成破甲粒子特效（附魔火花）
+     * 服务端通过 sendParticles 广播给所有客户端，客户端直接本地生成
+     */
+    private void spawnPiercingParticles(ToolAttackContext context) {
+        LivingEntity target = context.getLivingTarget();
+        if (target == null) return;
+
+        double x = target.getX();
+        double y = target.getY() + target.getBbHeight() * 0.5;
+        double z = target.getZ();
+        Level level = context.getLevel();
+
+        if (level instanceof ServerLevel serverLevel) {
+            serverLevel.sendParticles(ParticleTypes.ENCHANTED_HIT,
+                x, y, z, 12, 0.3, 0.3, 0.3, 0.05);
+        } else if (level.isClientSide) {
+            level.addParticle(ParticleTypes.ENCHANTED_HIT, x, y, z, 0, 0, 0);
+        }
     }
 }

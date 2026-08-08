@@ -64,7 +64,7 @@ public class FsqToolDefinitionDataProvider extends AbstractToolDefinitionDataPro
                         .build())
                 .module(new SetStatsModule(StatsNBT.builder()
                         .set(ToolStats.ATTACK_DAMAGE, 4f)
-                        .set(ToolStats.ATTACK_SPEED,  2.6f)//攻速
+                        .set(ToolStats.ATTACK_SPEED,  3.6f)//攻速
                         .set(ToolStats.BLOCK_AMOUNT,  10)
                         .build()))
                 .module(new MultiplyStatsModule(MultiplierNBT.builder()
@@ -75,8 +75,8 @@ public class FsqToolDefinitionDataProvider extends AbstractToolDefinitionDataPro
                 .module(ToolTraitsModule.builder()
                         .trait(ModifierIds.reach,1)//长臂一
                         .trait(ModifierIds.silkyShears)
-                        .trait(ModifierIds.pierce,5)//穿甲5
-                                .trait(RegisterModifiers.ARMOR_PIERCING,1)
+                        //.trait(ModifierIds.pierce,5)//穿甲5
+                        .trait(RegisterModifiers.ARMOR_PIERCING,1)//
                         //.trait(RegisterModifiers.)// 示例
                         .build())
                 .module(ToolActionsModule.of(ToolActions.SWORD_DIG))
