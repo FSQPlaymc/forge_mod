@@ -42,11 +42,11 @@ attackSpeed(1.15f) — percent(1.15) = (115 - 100)/100 = +0.15（攻击速度 +1
     private  void addMeleeHarvest(){
         System.out.print("load-stats-head");
         addMaterialStats(fsq_Materials.DRAGON_STEEL,
-                new HeadMaterialStats(2720, 5f, NETHERITE, 9f),
+                new HeadMaterialStats(2720, 5f, NETHERITE, 60f),
                 HandleMaterialStats.multipliers().miningSpeed(1.00f).attackSpeed(1.40f).durability(1.50f).attackDamage(1.15f).build(), // 手柄
                 StatlessMaterialStats.BINDING);
         addMaterialStats(fsq_Materials.WITHER_BONE,
-                new HeadMaterialStats(1220, 5f, DIAMOND, 8f),
+                new HeadMaterialStats(1220, 5f, DIAMOND, 18f),
                 HandleMaterialStats.multipliers().miningSpeed(1.10f).attackSpeed(1.20f).durability(1.15f).attackDamage(1.15f).build(), // 手柄
                 StatlessMaterialStats.BINDING
                 );
