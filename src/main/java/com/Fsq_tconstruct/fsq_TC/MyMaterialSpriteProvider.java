@@ -24,7 +24,7 @@ public class MyMaterialSpriteProvider extends AbstractMaterialSpriteProvider {
         buildMaterial(fsq_Materials.M_ESSENCE_SOUL)
                 .statType(Fsq_StatlessMaterialStats.HUN_ZHU)
                 .fallbacks("bone", "rock")
-                .colorMapper(PaletteHelper.fromMidColor(0xFF633D30));
+                .colorMapper(PaletteHelper_1.fromMidColor(0xFF633D30));
         buildMaterial(fsq_Materials.FIRE_CRYSTAL)
                 .statType(Fsq_StatlessMaterialStats.HUN_ZHU)
                 .fallbacks("bone", "rock")

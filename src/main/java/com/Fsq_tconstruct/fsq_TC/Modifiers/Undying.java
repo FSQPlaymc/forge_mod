@@ -13,12 +13,7 @@ import slimeknights.tconstruct.library.module.ModuleHookMap;
 import slimeknights.tconstruct.library.tools.context.EquipmentContext;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 
-public class Undying extends Modifier implements DamageBlockModifierHook {
-    @Override
-    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
-        super.registerHooks(hookBuilder);
-        hookBuilder.addHook(this, ModifierHooks.DAMAGE_BLOCK);
-    }
+
 
 public class Undying extends Modifier implements  DamageBlockModifierHook {//不灭
     @Override
