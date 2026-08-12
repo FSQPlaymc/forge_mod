@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:bone" },
+    { "item": "minecraft:fermented_spider_eye" },
+    { "item": "minecraft:fermented_spider_eye" }
+  ],
+  "result": { "item": "fsq_tconstruct:tc_items/poison_coated_bone", "count": 1 }
+}

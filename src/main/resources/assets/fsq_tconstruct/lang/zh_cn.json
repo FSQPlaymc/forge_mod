@@ -3,18 +3,21 @@
 
   "item.fsq_tconstruct.asd": "中文",
   "item.fsq_tconstruct.amethyst_diamond": "晶钻",
-  "item.fsq_tconstruct.tc_items/dragon_steel": "龙钢",
-  "item.fsq_tconstruct.tc_items/wither_bone": "凋骨合金",
-  "item.fsq_tconstruct.tc_items/fire_crystal": "火之精",
+  "item.fsq_tconstruct.tc_items.dragon_steel": "龙钢",
+  "item.fsq_tconstruct.tc_items.wither_bone": "凋骨合金",
+  "item.fsq_tconstruct.tc_items.fire_crystal": "火之精",
   "item.fsq_tconstruct.corpse_fat": "尸油球",
-  "item.fsq_tconstruct.tc_items/essence_soul": "魂之精",
+  "item.fsq_tconstruct.tc_items.essence_soul": "魂之精",
+  "item.fsq_tconstruct.tc_items.poison_coated_bone": "涂毒骨",
+  "item.fsq_tconstruct.tc_items.reinforced_silver": "强化银",
   "item.fsq_tconstruct.molten_wither_bone_bucket": "熔融凋骨合金桶",
   "item.fsq_tconstruct.molten_dragon_steel_bucket": "熔融龙钢桶",
+  "item.fsq_tconstruct.molten_reinforced_silver_bucket": "熔融强化银桶",
   "item.fsq_tconstruct.soul_spear": "魂戈",
   "item.fsq_tconstruct.soul_orb": "魂珠",
-  "item.fsq_tconstruct.cross/soul_orb_cast": "魂珠金铸模",
-  "item.fsq_tconstruct.cross/soul_orb_sand_cast": "魂珠砂铸模",
-  "item.fsq_tconstruct.cross/soul_orb_red_sand_cast": "魂珠红砂铸模",
+  "item.fsq_tconstruct.cross.soul_orb_cast": "魂珠金铸模",
+  "item.fsq_tconstruct.cross.soul_orb_sand_cast": "魂珠砂铸模",
+  "item.fsq_tconstruct.cross.soul_orb_red_sand_cast": "魂珠红砂铸模",
 
   "item.fsq_tconstruct.cross_knot": "十字结",
   "item.fsq_tconstruct.cross_knot_cast": "十字结金铸模",
@@ -36,12 +39,15 @@
   "fluid.fsq_tconstruct.molten_amethyst_diamond": "熔融晶钻",
   "fluid.fsq_tconstruct.molten_wither_bone": "熔融凋骨合金",
   "fluid.fsq_tconstruct.molten_dragon_steel": "熔融龙钢",
+  "fluid.fsq_tconstruct.molten_reinforced_silver": "熔融强化银",
   "fluid_type.fsq_tconstruct.molten_amethyst_diamond": "熔融晶钻",
   "fluid_type.fsq_tconstruct.molten_wither_bone": "熔融凋骨合金",
   "fluid_type.fsq_tconstruct.molten_dragon_steel": "熔融龙钢",
+  "fluid_type.fsq_tconstruct.molten_reinforced_silver": "熔融强化银",
   "block.fsq_tconstruct.molten_amethyst_diamond": "熔融晶钻",
   "block.fsq_tconstruct.molten_wither_bone": "熔融凋骨合金",
   "block.fsq_tconstruct.molten_dragon_steel": "熔融龙钢",
+  "block.fsq_tconstruct.molten_reinforced_silver": "熔融强化银",
 
   "_comment": "FSQ TCon 材料",
 
@@ -51,6 +57,8 @@
   "material.fsq_tconstruct.fire_crystal": "火之精",
   "material.fsq_tconstruct.wither_bone": "凋骨合金",
   "material.fsq_tconstruct.dragon_steel": "龙钢",
+  "material.fsq_tconstruct.reinforced_silver": "强化银",
+  "material.fsq_tconstruct.poison_coated_bone": "涂毒骨",
 
   "_comment": "FSQ TCon 修饰符",
 
@@ -101,6 +109,18 @@
   "modifier.fsq_tconstruct.virulent_poison": "剧毒",
   "modifier.fsq_tconstruct.virulent_poison.flavor": "致命毒液",
   "modifier.fsq_tconstruct.virulent_poison.description": "攻击给予缓慢III 30秒+中毒II 10秒",
+
+  "modifier.fsq_tconstruct.armor_piercing": "破甲",
+  "modifier.fsq_tconstruct.armor_piercing.flavor": "破盾之刃",
+  "modifier.fsq_tconstruct.armor_piercing.description": "伤害一分为二：一半正常伤害，一半无视护甲且无视无敌帧",
+
+  "modifier.fsq_tconstruct.flexible": "柔展",
+  "modifier.fsq_tconstruct.flexible.flavor": "柔韧防护",
+  "modifier.fsq_tconstruct.flexible.description": "每级额外增加4点护甲值与2点盔甲韧性",
+
+  "modifier.fsq_tconstruct.holy_armor": "圣洁（甲）",
+  "modifier.fsq_tconstruct.holy_armor.flavor": "神圣守护",
+  "modifier.fsq_tconstruct.holy_armor.description": "负面效果少于4个时获得生命恢复；全身叠加等级超过3时升级为生命恢复II",
 
   "_comment": "FSQ TCon GUI",
 

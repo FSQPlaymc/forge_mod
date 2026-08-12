@@ -1,0 +1,11 @@
+{
+  "type": "fsq_tconstruct:custom_melter",
+  "inputs": [
+    { "ingredient": { "tag": "forge:ingots/silver" }, "count": 5 },
+    { "ingredient": { "item": "minecraft:gold_ingot" }, "count": 2 },
+    { "ingredient": { "item": "minecraft:netherite_scrap" }, "count": 1 }
+  ],
+  "output": { "item": "fsq_tconstruct:tc_items/reinforced_silver", "count": 5 },
+  "temperature": 1500,
+  "time": 60
+}

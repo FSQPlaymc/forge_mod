@@ -1,5 +1,7 @@
 package com.Fsq_tconstruct.fsq_TC.Modifiers;
 
+import com.Fsq_tconstruct.fsq_TC.Modifiers.armor.FlexibleModifier;
+import com.Fsq_tconstruct.fsq_TC.Modifiers.armor.HolyArmorModifier;
 import com.Fsq_tconstruct.fsq_tconstruct;
 import net.minecraftforge.eventbus.api.IEventBus;
 import slimeknights.tconstruct.library.modifiers.util.ModifierDeferredRegister;
@@ -37,6 +39,14 @@ public class RegisterModifiers {
     public static final StaticModifier<VirulentPoisonModifier> VIRULENT_POISON = MODIFIERS.register("virulent_poison", VirulentPoisonModifier::new);
     /** 破甲 — 攻击伤害一分为二：50% 正常伤害 + 50% 无视护甲的破甲伤害，且攻击无视无敌帧 */
     public static final StaticModifier<ArmorPiercingModifier> ARMOR_PIERCING = MODIFIERS.register("armor_piercing", ArmorPiercingModifier::new);
+
+    // === 盔甲材料特性 ===
+    /** 柔展 — 构建盔甲时额外增加 4*n 点护甲值、2*n 点盔甲韧性（n 为材料特性等级） */
+    public static final StaticModifier<FlexibleModifier> FLEXIBLE =
+            MODIFIERS.register("flexible", FlexibleModifier::new);
+    /** 圣洁(甲) — 负面效果少于 4 个时持续获得生命恢复 10 秒；全身该特性等级叠加 > 3 时升级为生命恢复 II */
+    public static final StaticModifier<HolyArmorModifier> HOLY_ARMOR =
+            MODIFIERS.register("holy_armor", HolyArmorModifier::new);
 
     public static void register(IEventBus eventBus) {
         MODIFIERS.register(eventBus);

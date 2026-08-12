@@ -2,10 +2,12 @@ package com.Fsq_tconstruct.fsq_TC;
 
 import com.Fsq_tconstruct.fsq_tconstruct;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.library.data.material.AbstractMaterialDataProvider;
 import slimeknights.tconstruct.library.materials.definition.MaterialId;
+import slimeknights.tconstruct.library.tools.item.TinkerTier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 
@@ -17,6 +19,8 @@ public class fsq_Materials extends AbstractMaterialDataProvider {
     public static final MaterialId FIRE_CRYSTAL=id("fire_crystal");//火之精
     public static final MaterialId WITHER_BONE =id("wither_bone");//凋骨合金
     public static final MaterialId DRAGON_STEEL=id("dragon_steel");//龙钢
+    public static final MaterialId REINFORCED_SILVER=id("reinforced_silver");//强化银
+    public static final MaterialId POISON_COATED_BONE=id("poison_coated_bone");//涂毒骨
 
     public fsq_Materials(PackOutput packOutput) {
         super(packOutput);
@@ -37,12 +41,20 @@ public class fsq_Materials extends AbstractMaterialDataProvider {
     //public static final ToolPartItem aaaa=new ToolPartItem(new Item.Properties(),asd.ID);
     @Override
     protected void addMaterials() {
+        addMaterial(POISON_COATED_BONE,3,ORDER_WEAPON,true);
+        addMaterial(REINFORCED_SILVER,5,ORDER_GENERAL,false);
         addMaterial(Amethyst_shardDiamond,3,ORDER_WEAPON,false);
         addMaterial(zxc, 3, ORDER_GENERAL, true);
         addMaterial(M_ESSENCE_SOUL,2,ORDER_WEAPON,true);
         addMaterial(FIRE_CRYSTAL,2,ORDER_WEAPON,true);
         addMaterial(WITHER_BONE,4,ORDER_GENERAL,false);
         addMaterial(DRAGON_STEEL,5,ORDER_GENERAL,false);
-    }
+    }/*
+    注：“sortOrder”根据材料用途，共有如下分类：
+0：普通1：采掘2：战斗3：特殊（(例如生铁）
+4：战斗（仅远程，例如竹）
+5:联动 10：下界 15：末地
+20：仅绑定结25：仅修复或材质用（用途未知，不建议使用）
+*/
 
 }

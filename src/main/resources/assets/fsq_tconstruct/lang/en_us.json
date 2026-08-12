@@ -3,18 +3,21 @@
 
   "item.fsq_tconstruct.asd": "asda",
   "item.fsq_tconstruct.amethyst_diamond": "amethyst diamond",
-  "item.fsq_tconstruct.tc_items/dragon_steel": "Dragon Steel",
-  "item.fsq_tconstruct.tc_items/wither_bone": "Wither Bone",
-  "item.fsq_tconstruct.tc_items/fire_crystal": "Fire Crystal",
+  "item.fsq_tconstruct.tc_items.dragon_steel": "Dragon Steel",
+  "item.fsq_tconstruct.tc_items.wither_bone": "Wither Bone",
+  "item.fsq_tconstruct.tc_items.fire_crystal": "Fire Crystal",
   "item.fsq_tconstruct.corpse_fat": "Corpse Fat",
-  "item.fsq_tconstruct.tc_items/essence_soul": "Essence Soul",
+  "item.fsq_tconstruct.tc_items.essence_soul": "Essence Soul",
+  "item.fsq_tconstruct.tc_items.poison_coated_bone": "Poison Coated Bone",
+  "item.fsq_tconstruct.tc_items.reinforced_silver": "Reinforced Silver",
   "item.fsq_tconstruct.molten_wither_bone_bucket": "Molten Wither Bone Bucket",
   "item.fsq_tconstruct.molten_dragon_steel_bucket": "Molten Dragon Steel Bucket",
+  "item.fsq_tconstruct.molten_reinforced_silver_bucket": "Molten Reinforced Silver Bucket",
   "item.fsq_tconstruct.soul_spear": "Soul Spear",
   "item.fsq_tconstruct.soul_orb": "Soul Orb",
-  "item.fsq_tconstruct.cross/soul_orb_cast": "Soul Orb Gold Cast",
-  "item.fsq_tconstruct.cross/soul_orb_sand_cast": "Soul Orb Sand Cast",
-  "item.fsq_tconstruct.cross/soul_orb_red_sand_cast": "Soul Orb Red Sand Cast",
+  "item.fsq_tconstruct.cross.soul_orb_cast": "Soul Orb Gold Cast",
+  "item.fsq_tconstruct.cross.soul_orb_sand_cast": "Soul Orb Sand Cast",
+  "item.fsq_tconstruct.cross.soul_orb_red_sand_cast": "Soul Orb Red Sand Cast",
 
   "item.fsq_tconstruct.cross_knot": "Cross Knot",
   "item.fsq_tconstruct.cross_knot_cast": "Cross Knot Gold Cast",
@@ -36,12 +39,15 @@
   "fluid.fsq_tconstruct.molten_amethyst_diamond": "Molten Amethyst Diamond",
   "fluid.fsq_tconstruct.molten_wither_bone": "Molten Wither Bone",
   "fluid.fsq_tconstruct.molten_dragon_steel": "Molten Dragon Steel",
+  "fluid.fsq_tconstruct.molten_reinforced_silver": "Molten Reinforced Silver",
   "fluid_type.fsq_tconstruct.molten_amethyst_diamond": "Molten Amethyst Diamond",
   "fluid_type.fsq_tconstruct.molten_wither_bone": "Molten Wither Bone",
   "fluid_type.fsq_tconstruct.molten_dragon_steel": "Molten Dragon Steel",
+  "fluid_type.fsq_tconstruct.molten_reinforced_silver": "Molten Reinforced Silver",
   "block.fsq_tconstruct.molten_amethyst_diamond": "Molten Amethyst Diamond",
   "block.fsq_tconstruct.molten_wither_bone": "Molten Wither Bone",
   "block.fsq_tconstruct.molten_dragon_steel": "Molten Dragon Steel",
+  "block.fsq_tconstruct.molten_reinforced_silver": "Molten Reinforced Silver",
 
   "_comment": "FSQ TCon Materials",
 
@@ -51,6 +57,8 @@
   "material.fsq_tconstruct.fire_crystal": "Fire Crystal",
   "material.fsq_tconstruct.wither_bone": "Wither Bone",
   "material.fsq_tconstruct.dragon_steel": "Dragon Steel",
+  "material.fsq_tconstruct.reinforced_silver": "Reinforced Silver",
+  "material.fsq_tconstruct.poison_coated_bone": "Poison Coated Bone",
 
   "_comment": "FSQ TCon Modifiers",
 
@@ -101,6 +109,18 @@
   "modifier.fsq_tconstruct.virulent_poison": "Virulent Poison",
   "modifier.fsq_tconstruct.virulent_poison.flavor": "Deadly venom",
   "modifier.fsq_tconstruct.virulent_poison.description": "Applies Slowness and Poison on hit",
+
+  "modifier.fsq_tconstruct.armor_piercing": "Armor Piercing",
+  "modifier.fsq_tconstruct.armor_piercing.flavor": "Shield breaker",
+  "modifier.fsq_tconstruct.armor_piercing.description": "Splits damage in half: one normal, one armor-piercing, ignoring invulnerability frames",
+
+  "modifier.fsq_tconstruct.flexible": "Flexible",
+  "modifier.fsq_tconstruct.flexible.flavor": "Flowing protection",
+  "modifier.fsq_tconstruct.flexible.description": "Adds 4 armor and 2 armor toughness per level",
+
+  "modifier.fsq_tconstruct.holy_armor": "Holy Armor",
+  "modifier.fsq_tconstruct.holy_armor.flavor": "Divine protection",
+  "modifier.fsq_tconstruct.holy_armor.description": "Grants Regeneration while few negative effects are active; upgrades to Regeneration II with high total level",
 
   "_comment": "FSQ TCon GUI",
 

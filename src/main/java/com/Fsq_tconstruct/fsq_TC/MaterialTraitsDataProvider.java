@@ -33,5 +33,11 @@ public  class MaterialTraitsDataProvider extends AbstractMaterialTraitDataProvid
         addTraits(fsq_Materials.DRAGON_STEEL,MELEE_HARVEST,RegisterModifiers.RUDE);
         addTraits(fsq_Materials.DRAGON_STEEL,MELEE_HARVEST,RegisterModifiers.TOUGHNESS);
         addTraits(fsq_Materials.DRAGON_STEEL,ARMOR,ModifierIds.recurrentProtection);
+        addTraits(fsq_Materials.REINFORCED_SILVER,ARMOR,RegisterModifiers.HOLY_ARMOR.getId());// 圣洁(甲) — 负面效果少于 4 个时持续获得生命恢复；全身等级叠加 > 3 升级为生命恢复 II
+        addTraits(fsq_Materials.REINFORCED_SILVER,ARMOR,RegisterModifiers.FLEXIBLE.getId());// 柔展 — 构建盔甲时额外增加 4*n 护甲值、2*n 盔甲韧性
+        addTraits(fsq_Materials.REINFORCED_SILVER,MELEE_HARVEST,RegisterModifiers.HOLY.getId());
+        addTraits(fsq_Materials.POISON_COATED_BONE,MELEE_HARVEST,RegisterModifiers.VIRULENT_POISON.getId());
+        addTraits(fsq_Materials.POISON_COATED_BONE,MELEE_HARVEST,ModifierIds.pierce );
+
     }
 }

@@ -42,11 +42,11 @@ attackSpeed(1.15f) — percent(1.15) = (115 - 100)/100 = +0.15（攻击速度 +1
     private  void addMeleeHarvest(){
         System.out.print("load-stats-head");
         addMaterialStats(fsq_Materials.DRAGON_STEEL,
-                new HeadMaterialStats(2720, 5f, NETHERITE, 60f),
+                new HeadMaterialStats(2720, 9f, NETHERITE, 60f),
                 HandleMaterialStats.multipliers().miningSpeed(1.00f).attackSpeed(1.40f).durability(1.50f).attackDamage(1.15f).build(), // 手柄
                 StatlessMaterialStats.BINDING);
         addMaterialStats(fsq_Materials.WITHER_BONE,
-                new HeadMaterialStats(1220, 5f, DIAMOND, 18f),
+                new HeadMaterialStats(1220, 7f, DIAMOND, 18f),
                 HandleMaterialStats.multipliers().miningSpeed(1.10f).attackSpeed(1.20f).durability(1.15f).attackDamage(1.15f).build(), // 手柄
                 StatlessMaterialStats.BINDING
                 );
@@ -60,7 +60,17 @@ attackSpeed(1.15f) — percent(1.15) = (115 - 100)/100 = +0.15（攻击速度 +1
                 new HeadMaterialStats(620, 5f, DIAMOND, 7.5f),
                 HandleMaterialStats.multipliers().miningSpeed(0.94f).attackSpeed(1.15f).build(), // 手柄
                 StatlessMaterialStats.BINDING
+        );
                 //Fsq_StatlessMaterialStats.HUN_ZHU // 魂珠部件属性，使该材料可制作魂珠
+                addMaterialStats(fsq_Materials.REINFORCED_SILVER,
+                        new HeadMaterialStats(920, 3f, NETHERITE, 8.5f),
+                        HandleMaterialStats.multipliers().miningSpeed(1.10f).attackSpeed(2.20f).durability(1.20f).attackDamage(1.25f).build(), // 手柄
+                        StatlessMaterialStats.BINDING
+                );
+        addMaterialStats(fsq_Materials.POISON_COATED_BONE,
+                new HeadMaterialStats(520, 3f, IRON, 4.5f),
+                HandleMaterialStats.multipliers().miningSpeed(0.90f).attackSpeed(1.20f).durability(0.90f).attackDamage(1.05f).build(), // 手柄
+                StatlessMaterialStats.BINDING
         );
     }
     private void addRanged(){
@@ -73,10 +83,13 @@ attackSpeed(1.15f) — percent(1.15) = (115 - 100)/100 = +0.15（攻击速度 +1
                 PlatingMaterialStats.builder().durabilityFactor(90).armor(8,13,11,8).toughness(4),
                 StatlessMaterialStats.MAILLE);
         addArmorShieldStats(fsq_Materials.WITHER_BONE,
-                PlatingMaterialStats.builder().durabilityFactor(40).armor(5,7,6,5).toughness(1),
+                PlatingMaterialStats.builder().durabilityFactor(40).armor(5,6,7,5).toughness(1),
                 StatlessMaterialStats.MAILLE);
         addArmorShieldStats(fsq_Materials.zxc,
                 PlatingMaterialStats.builder().durabilityFactor(28).armor(2, 5, 6, 2).toughness(2),
+                StatlessMaterialStats.MAILLE);
+        addArmorShieldStats(fsq_Materials.REINFORCED_SILVER,
+                PlatingMaterialStats.builder().durabilityFactor(80).armor(3, 6, 7, 4).toughness(1),
                 StatlessMaterialStats.MAILLE);
     }
 }

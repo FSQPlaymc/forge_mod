@@ -6,6 +6,6 @@
     { "ingredient": { "item": "minecraft:soul_soil" }, "count": 9 }
   ],
   "output": { "item": "fsq_tconstruct:tc_items/wither_bone", "count": 1 },
-  "temperature": 1500,
+  "temperature": 1400,
   "time": 90
 }

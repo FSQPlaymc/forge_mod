@@ -1,4 +1,4 @@
-// 1.20.1	2026-07-12T16:57:43.9161496	Recipes
+// 1.20.1	2026-08-12T16:52:56.4753376	Recipes
 3015e7237741b30e6e144697f6ba025c2139d7c5 data/fsq_tconstruct/recipes/smeltery/casts/gold/cross_knot.json
 ead668adb9007567fc09afc4b6fc350303ae9e43 data/fsq_tconstruct/recipes/smeltery/casts/gold/soul_orb.json
 6e5311e379bc92d2e4b8c30b85b84b57f0fa209b data/fsq_tconstruct/recipes/smeltery/casts/red_sand/builder_block/cross_knot.json
@@ -18,6 +18,7 @@ d3aeaf876c40e48c4139bb6c5ef6e9621b9a3333 data/fsq_tconstruct/recipes/smeltery/ca
 4c13cd5d5360969a8d38ef85387a272d6b567734 data/fsq_tconstruct/recipes/tools/materials/first/amethyst_diamond.json
 ac667fbdd39485b95011dd3d0300a539a3d69047 data/fsq_tconstruct/recipes/tools/materials/first/casting/amethyst_diamond.json
 d07c2b411aa2918f0396af7157f8f36e3cdd2484 data/fsq_tconstruct/recipes/tools/materials/first/casting/dragon_steel.json
+364b1a22a0c2177ded008494159baa47da8e113b data/fsq_tconstruct/recipes/tools/materials/first/casting/reinforced_silver.json
 454565de56aa181410d0e9904d1e679e22b87d5d data/fsq_tconstruct/recipes/tools/materials/first/casting/wither_bone.json
 1b9c61556a32350ebd69a9552c986529521688a5 data/fsq_tconstruct/recipes/tools/materials/first/dragon_steel.json
 a457ecda9c0dabee57a190c6aba4e2706f5dfccf data/fsq_tconstruct/recipes/tools/materials/first/essence_soul.json
@@ -27,8 +28,12 @@ f7249befcae33a4ddec663f4336ecdc31dd0405d data/fsq_tconstruct/recipes/tools/mater
 75d4d12fb2f9777b6d96e1125f3d5f7b686cd5e3 data/fsq_tconstruct/recipes/tools/materials/first/melting/amethyst_diamond_item.json
 685c2011630e9e8ca146f09b1fb01c52ff0eb75f data/fsq_tconstruct/recipes/tools/materials/first/melting/dragon_steel.json
 570dea4ee458571bb613d3651f22ed5b34841f41 data/fsq_tconstruct/recipes/tools/materials/first/melting/dragon_steel_item.json
+a5bb34e665c125873dc2d90e6b1f45b63ae7402c data/fsq_tconstruct/recipes/tools/materials/first/melting/reinforced_silver.json
+5f42923d783b0ed7700b23e4668f2f6c41d35571 data/fsq_tconstruct/recipes/tools/materials/first/melting/reinforced_silver_item.json
 db1bc05626ab7e0d4dc149c505eaa510d78f448a data/fsq_tconstruct/recipes/tools/materials/first/melting/wither_bone.json
 6124eb6d43338317ac54ae67c53f6d00908d4bdd data/fsq_tconstruct/recipes/tools/materials/first/melting/wither_bone_item.json
+0e6c33f199e5808c134abe53b614db11cead2251 data/fsq_tconstruct/recipes/tools/materials/first/poison_coated_bone.json
+f75ca587035abbdae118c2cc6ada0d25c09d1211 data/fsq_tconstruct/recipes/tools/materials/first/reinforced_silver.json
 762e34e9f3ebcc205b86d2d9306e8f50a5f7bad0 data/fsq_tconstruct/recipes/tools/materials/first/wither_bone.json
 7a07098c006a93ae53822b6a5fc72fe3a894307d data/fsq_tconstruct/recipes/tools/parts/builder/cross_knot.json
 7177a9e1514092773126992e9b8cdb652641d7e7 data/fsq_tconstruct/recipes/tools/parts/builder/soul_orb.json

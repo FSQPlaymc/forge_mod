@@ -23,5 +23,7 @@ public class MyMaterialRenderInfoProvider extends AbstractMaterialRenderInfoProv
         buildRenderInfo(fsq_Materials.FIRE_CRYSTAL);
         buildRenderInfo(fsq_Materials.WITHER_BONE);
         buildRenderInfo(fsq_Materials.DRAGON_STEEL);
+        buildRenderInfo(fsq_Materials.REINFORCED_SILVER);
+        buildRenderInfo(fsq_Materials.POISON_COATED_BONE);
     }
 }
