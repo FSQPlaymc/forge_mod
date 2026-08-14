@@ -47,6 +47,9 @@ public class RegisterModifiers {
     /** 圣洁(甲) — 负面效果少于 4 个时持续获得生命恢复 10 秒；全身该特性等级叠加 > 3 时升级为生命恢复 II */
     public static final StaticModifier<HolyArmorModifier> HOLY_ARMOR =
             MODIFIERS.register("holy_armor", HolyArmorModifier::new);
+    /** 范围冲击 — 攻击时以主目标为圆心造成范围魔法伤害，1级占1能力槽，2~5级升级不占槽 */
+    public static final StaticModifier<AoEShockwaveModifier> AOE_SHOCKWAVE =
+            MODIFIERS.register("aoe_shockwave", AoEShockwaveModifier::new);
 
     public static void register(IEventBus eventBus) {
         MODIFIERS.register(eventBus);

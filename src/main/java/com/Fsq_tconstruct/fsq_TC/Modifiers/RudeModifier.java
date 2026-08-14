@@ -42,7 +42,7 @@ public class RudeModifier extends Modifier implements MeleeDamageModifierHook {
         LivingEntity target = context.getLivingTarget();
         if (target != null) {
             // 判断目标是否为玩家 / 预设 BOSS / 血量上限超过 20000 的强力生物
-            if (target.getType() == EntityType.PLAYER || BOSS_ENTITIES.contains(target.getType()) || target.getMaxHealth() > 20000) {
+            if (target.getType() == EntityType.PLAYER || BOSS_ENTITIES.contains(target.getType()) || target.getMaxHealth() > 590) {
                 // 伤害 ×5
                 return damage * 5.0f;
             }

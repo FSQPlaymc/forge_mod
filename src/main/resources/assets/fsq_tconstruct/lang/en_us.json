@@ -122,6 +122,10 @@
   "modifier.fsq_tconstruct.holy_armor.flavor": "Divine protection",
   "modifier.fsq_tconstruct.holy_armor.description": "Grants Regeneration while few negative effects are active; upgrades to Regeneration II with high total level",
 
+  "modifier.fsq_tconstruct.aoe_shockwave": "AOE Shockwave",
+  "modifier.fsq_tconstruct.aoe_shockwave.flavor": "Shock wave",
+  "modifier.fsq_tconstruct.aoe_shockwave.description": "On attack, performs an AoE attack centered on the main target (L1: radius 1 / 10% dmg, L2: 2 / 20%, L3: 3.5 / 30%, L4: 6 / 40%, L5: 10 / 50%); does not hurt the main target, yourself or allies",
+
   "_comment": "FSQ TCon GUI",
 
   "gui.fsq_tconstruct.custom_melter": "Custom Melter",

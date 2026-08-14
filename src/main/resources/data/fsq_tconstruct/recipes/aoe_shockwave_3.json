@@ -1,0 +1,10 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    { "item": "minecraft:ghast_tear", "count": 3 },
+    { "item": "minecraft:tnt", "count": 2 }
+  ],
+  "tools": { "tag": "tconstruct:modifiable/melee" },
+  "result": "fsq_tconstruct:aoe_shockwave",
+  "level": 3
+}

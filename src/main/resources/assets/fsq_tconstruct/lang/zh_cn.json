@@ -122,6 +122,10 @@
   "modifier.fsq_tconstruct.holy_armor.flavor": "神圣守护",
   "modifier.fsq_tconstruct.holy_armor.description": "负面效果少于4个时获得生命恢复；全身叠加等级超过3时升级为生命恢复II",
 
+  "modifier.fsq_tconstruct.aoe_shockwave": "范围冲击",
+  "modifier.fsq_tconstruct.aoe_shockwave.flavor": "震荡波",
+  "modifier.fsq_tconstruct.aoe_shockwave.description": "攻击时以主目标为圆心执行范围攻击（1级:半径1格/10%伤害，2级:半径2格/20%，3级:半径3.5格/30%，4级:半径6格/40%，5级:半径10格/50%），不伤害主目标、自己和队友",
+
   "_comment": "FSQ TCon GUI",
 
   "gui.fsq_tconstruct.custom_melter": "自定义熔炼炉",
