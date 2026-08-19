@@ -34,6 +34,9 @@ public class createTAB {
                         output.accept(fsq_items.MOLTEN_AMETHYST_DIAMOND_BUCKET.get());
                         output.accept(fsq_items.MOLTEN_WITHER_BONE_BUCKET.get());
                         output.accept(fsq_items.MOLTEN_DRAGON_STEEL_BUCKET.get());
+                        output.accept(fsq_items.MOLTEN_REINFORCED_SILVER_BUCKET.get());
+                        output.accept(fsq_items.POISON_COATED_BONE.get());
+                        output.accept(fsq_items.REINFORCED_SILVER.get());
                         output.accept(ModRegistries.CUSTOM_MELTER_ITEM.get());
                     })
                     .build());

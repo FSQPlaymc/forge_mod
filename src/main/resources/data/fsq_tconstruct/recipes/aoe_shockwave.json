@@ -1,8 +1,10 @@
 {
   "type": "tconstruct:modifier",
   "inputs": [
-    { "item": "minecraft:gunpowder", "count": 2 },
-    { "item": "minecraft:tnt", "count": 2 }
+    { "item": "minecraft:gunpowder", "count": 1 },
+    { "item": "minecraft:gunpowder", "count": 1 },
+    { "item": "minecraft:tnt", "count": 1 },
+    { "item": "minecraft:tnt", "count": 1 }
   ],
   "tools": { "tag": "tconstruct:modifiable/melee" },
   "result": "fsq_tconstruct:aoe_shockwave",

@@ -1,8 +1,11 @@
 {
   "type": "tconstruct:modifier",
   "inputs": [
-    { "item": "minecraft:ghast_tear", "count": 3 },
-    { "item": "minecraft:tnt", "count": 2 }
+    { "item": "minecraft:ghast_tear", "count": 1 },
+    { "item": "minecraft:ghast_tear", "count": 1 },
+    { "item": "minecraft:ghast_tear", "count": 1 },
+    { "item": "minecraft:tnt", "count": 1 },
+    { "item": "minecraft:tnt", "count": 1 }
   ],
   "tools": { "tag": "tconstruct:modifiable/melee" },
   "result": "fsq_tconstruct:aoe_shockwave",
